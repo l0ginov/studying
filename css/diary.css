@@ -1,0 +1,65 @@
+body {
+    background-color: #1a1a1a; /* Чуть потемнее, чтобы был контраст */
+    color: #e0e0e0;            /* Мягкий белый, чтобы глаза не резало */
+    font-family: sans-serif;   /* Уберет эти "засечки" у букв, будет выглядеть как современное приложение */
+    line-height: 1.6;          /* Добавит воздуха между строками, читать станет в разы легче */
+}
+
+.online {
+    background-color: rgba(0, 255, 136, 0.03); /* Еле заметный зеленый оттенок фона */
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #00ff88; /* Оставляем полоску слева, но яркую */
+    color: #00ff88;
+    margin-bottom: 20px;
+    /* Убираем text-shadow, чтобы глаза не болели */
+}
+
+/* Маленький бонус: сделаем заголовки покрасивее */
+h2 {
+    color: #55aaff;            /* Голубой цвет для дат */
+    border-bottom: 1px solid #333; 
+    padding-bottom: 5px;
+}
+
+.offline {
+    background-color: #2a2a2a; /* Чуть светлее фона, но темнее активных блоков */
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0.5;              /* Сделаем еще чуть прозрачнее */
+    border-left: 4px solid #444; /* Добавим серую полоску сбоку, как в цитатах */
+    filter: grayscale(80%);    /* Если там будут иконки или цвета, они станут почти ч/б */
+    margin-bottom: 20px;       /* Чтобы блоки не слипались */
+}
+
+.music, .video {
+    background: rgba(255, 255, 255, 0.05); /* Легкий прозрачный фон */
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #444;    /* Тонкая рамка */
+    width: fit-content;        /* Чтобы блок не растягивался на весь экран */
+    margin: 20px 0;            /* Отступы сверху и снизу */
+    text-align: center;
+}
+
+.music figcaption, .video figcaption {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(100%); 
+    display: block;    /* Выбиваем его в отдельную строку, чтобы он мог расширяться */
+    width: 400px;      /* Попробуй задать фиксированную ширину в пикселях для теста */
+    margin: 0 auto;    /* Центрируем его внутри карточки */
+}
+
+video {
+    border-radius: 10px;      /* Скругляем углы самого ролика */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Добавляем глубину */
+    max-width: 100%;          /* Чтобы видео не вылезало за границы на телефонах */
+    outline: none;
+    background-color: #000; /* Чтобы даже во время загрузки не было белых вспышек */
+    display: block;
+}
