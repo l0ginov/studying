@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <title>Diary</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/diary.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/diary.css">
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>My diary for what I have done by days</h1>
+        <hr>
+    </header>
+    <main>
         <section class="online" id="firston">
             <h2>Date:02.03.2026 <input type="checkbox" checked></h2>
             <p>Today I have learned new things, for example: attributes and how to write the code in HTML.</p>
@@ -21,7 +25,7 @@
             <p>&lt;a&gt;, &lt;h1-h6&gt;, &lt;p&gt;, &lt;img&gt;, &lt;input&gt;, &lt;button&gt; and attributes:</p>
             <p>disabled, alt, width</p>
             <p>A project I made based on the knowledge I gained:</p>
-            <a href="html/02032026.html">Click</a>
+            <a href="02032026.html">Click</a>
         </section>
         <section class="online" id="secondon">
             <h2>Date:03.03.2026 <input type="checkbox" checked></h2>
@@ -33,7 +37,7 @@
                 &lt;body&gt;, &lt;main&gt;, &lt;section&gt;, &lt;figure&gt;, &lt;figcaption&gt;, &lt;em&gt;,
                 &lt;strong&gt;, &lt;footer&gt;, &lt;!DOCTYPE&gt;.
             <p>A project I made based on the knowledge I gained:</p>
-            <a href="html/03032026.html">Click</a>
+            <a href="03032026.html">Click</a>
         </section>
         <section class="offline" id="firstoff">
             <h2>Date:04.03.2026 <input type="checkbox"></h2>
@@ -86,14 +90,14 @@
                 <figcaption><strong>Now Playing: Armin van Buuren feat. Sharon Den Adel-In And Out Of
                         Love</strong></figcaption>
                 <audio controls loop>
-                    <source src="music/music1.mp3" type="audio/mpeg">
+                    <source src="../music/music1.mp3" type="audio/mpeg">
                     <p>К сожалению, ваш браузер не поддерживает аудио.</p>
                 </audio>
             </figure>
             <figure class="video">
                 <figcaption><strong>What is the meaning of life?</strong></figcaption>
                 <video controls>
-                    <source src="video/video1.mp4" type="video/mp4">
+                    <source src="../video/video1.mp4" type="video/mp4">
                     <p>К сожалению, ваш браузер не поддерживает видео.</p>
                 </video>
                 <figcaption>
@@ -104,6 +108,11 @@
             </figure>
         </section>
     </main>
+    
+    <footer>
+        <hr>
+        <nav><a href="../index.html">Back to main menu</a></nav>
+    </footer>
 </body>
 
 </html>
