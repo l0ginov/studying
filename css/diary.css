@@ -151,3 +151,11 @@ h2.date {
 .finishone ul {
     list-style-type: disc;
 }
+
+footer {
+    background-color: #111;
+    color: #888;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
