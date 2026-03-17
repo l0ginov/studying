@@ -5,17 +5,28 @@
     <title>Diary</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My website for tracking my work and studies">
+    <meta property="og:title" content="Loginov's site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Look how I learned to make websites in a couple of days!" />
+    <!-- НЕ ЗАБУДЬ ДОБАВИТЬ ССЫЛКИ И КАРТИНКУ КАК ТОЛЬКО САЙТ ПЕРЕСТАНЕТ БЫТЬ ЧИСТО ЛОКАЛЬНЫМ!-->
     <link rel="stylesheet" href="../css/diary.css">
 </head>
 
 <body>
     <header>
-        <h1>My diary for what I have done by days</h1>
+        <hr>
+        <h1>Loginov's site</h1>
+        <p>Welcome to my blog! Here you can track my progress in HTML, CSS, and JavaScript programming.</p>
+        <hr>
+        <nav><a href="../index.html">Back to main menu</a></nav>
         <hr>
     </header>
     <main>
         <section class="online" id="firston">
-            <h2><time datetime="2026-03-02">Date:02.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-02">Date:02.03.2026</time> <input type="checkbox" checked></h2>
             <p>Today I have learned new things, for example: attributes and how to write the code in HTML.</p>
             <p>I am glad, that I can see what I have written in my code (in HTML-format)</p>
             <p>Also I am happy, because that lesson was so interesting for me</p>
@@ -28,7 +39,7 @@
             <a href="02032026.html">Click</a>
         </section>
         <section class="online" id="secondon">
-            <h2><time datetime="2026-03-03">Date:03.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-03">Date:03.03.2026</time> <input type="checkbox" checked></h2>
             <p>Today I saw a lot of new things and tags</p>
             <p>Its still very interesting for me and I think that I will continue learning HTML
             <p>
@@ -77,7 +88,7 @@
                 dive into CSS soon.</p>
         </section>
         <section class="online" id="thirdon">
-            <h2><time datetime="2026-03-15">Date: 15.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-15">Date: 15.03.2026</time> <input type="checkbox" checked></h2>
             <p>Today I have learned how to use tags &lt;audio&gt;, &lt;video&gt; and more of attributes: </p>
             <ul>
                 <li>controls</li>
@@ -111,7 +122,7 @@
             </figure>
         </section>
         <section class="online" id="fourthon">
-            <h2><time datetime="2026-03-16">Date: 16.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-16">Date: 16.03.2026</time> <input type="checkbox" checked></h2>
             <p>Today I focused on my project architecture, linked all pages together and learned some advanced tags:
             </p>
             <ul>
@@ -130,12 +141,69 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <figcaption>McLaren P1 on Backroads in 4k</figcaption>
             </figure>
+            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" stroke="black" stroke-width="4" fill="yellow" />
+                <circle cx="35" cy="40" r="5" fill="black" />
+                <circle cx="65" cy="40" r="5" fill="black" />
+                <path d="M35 65 Q50 80 65 65" stroke="black" stroke-width="4" fill="transparent" />
+            </svg>
+
+        </section>
+        <section class="online finishone" id="fifthon">
+            <h2 id="finishonedate"><time datetime="2026-03-17">Date: 17.03.2026</time><input type="checkbox" checked>
+            </h2>
+            <p>Today was a pretty productive day, I learned and used a lot of new things, and most importantly, today I
+                achieved my first goal.</p>
+            <p>Today’s Progress:</p>
+            <ol>
+                <li><strong> SVG Construction:</strong> Dived deep into SVG paths and shapes. Now I can actually build
+                    and
+                    manipulate vector graphics from scratch, moving beyond basic circles to complex custom icons.</li>
+                <li><strong>CSS Power User:</strong> Gained solid experience in CSS architecture. I now fully
+                    understand:
+                    <ul>
+                        <li><strong>Specificity & Cascade:</strong> How the "weight" of selectors and their order in the
+                            file determine the final look.</li>
+                        <li><strong>Class Composition:</strong> Using multiple classes (like <code>box blue-box</code>)
+                            to keep code modular and clean.</li>
+                        <li><strong>Link States:</strong> Total control over <code>hover</code>, <code>visited</code>,
+                            <code>focus</code>, and <code>active</code> (LVHFA), finally killing those default
+                            blue/purple colors.
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Milestone Reached:</strong> Officially <strong>finished the "Basic HTML"</strong> course on
+                    freeCodeCamp — <strong>137 of 137 lessons completed!</strong>
+                    <br> <img src="../img/finishone.png" alt="Proof that the basic HTML has been completed." width="400">
+                </li>
+                <li><strong>Next Step:</strong> Moving on to "Semantic HTML" (55 steps) to learn how to make my code
+                    accessible and meaningful for search engines and screen readers.</li>
+            </ol>
+            <p>Today's projects:</p>
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path d="M 10 10 L 90 10 L 90 70 L 10 70 L 10 10 L 50 40 L 90 10 Z" stroke="black" fill="none" />
+            </svg>
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path d="M 10 80 L 50 20 L 90 80 Q50 60 10 80 Z" stroke="black" fill="none" />
+            </svg>
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path d="M 20 40 L 20 80 L 80 80 L 80 40 L 20 40 M 15 45 L 50 10 L 85 45 " stroke="brown" fill="none" />
+            </svg>
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="25" stroke="gray" fill="none" />
+                <path d="M 30 35 L 25 20 L 40 28 M 70 35 L 75 20 L 60 28" stroke="gray" fill="none" />
+                <path d="M 35 45 Q 40 35 45 45" stroke="black" stroke-width="2" fill="none" />
+                <path d="M 55 45 Q 60 35 65 45" stroke="black" stroke-width="2" fill="none" />
+                <path d="M 50 60 Q 45 65 40 60" stroke="black" stroke-width="2" fill="none" />
+                <path d="M 50 60 Q 55 65 60 60" stroke="black" stroke-width="2" fill="none" />
+                <circle cx="50" cy="53" r="1" />
+            </svg>
+            <p>The rest of the changes made today affected the CSS file.</p>
         </section>
     </main>
 
     <footer>
         <hr>
-        <nav><a href="../index.html">Back to main menu</a></nav>
     </footer>
 </body>
 
