@@ -1,82 +1,151 @@
 body {
     background-color: #1a1a1a;
+    /* Чуть потемнее, чтобы был контраст */
     color: #e0e0e0;
+    /* Мягкий белый, чтобы глаза не резало */
     font-family: sans-serif;
+    /* Уберет эти "засечки" у букв, будет выглядеть как современное приложение */
     line-height: 1.6;
-    margin: 20px;
+    /* Добавит воздуха между строками, читать станет в разы легче */
 }
 
 .online {
     background-color: rgba(0, 255, 136, 0.03);
+    /* Еле заметный зеленый оттенок фона */
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #00ff88;
+    /* Оставляем полоску слева, но яркую */
     color: #00ff88;
     margin-bottom: 20px;
+    /* Убираем text-shadow, чтобы глаза не болели */
 }
 
+/* Маленький бонус: сделаем заголовки покрасивее */
 h2 {
     color: #55aaff;
+    /* Голубой цвет для дат */
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
 }
 
 .offline {
     background-color: #2a2a2a;
+    /* Чуть светлее фона, но темнее активных блоков */
     padding: 15px;
     border-radius: 8px;
     opacity: 0.5;
+    /* Сделаем еще чуть прозрачнее */
     border-left: 4px solid #444;
+    /* Добавим серую полоску сбоку, как в цитатах */
     filter: grayscale(80%);
+    /* Если там будут иконки или цвета, они станут почти ч/б */
     margin-bottom: 20px;
+    /* Чтобы блоки не слипались */
 }
+
 
 .music,
 .video {
     background: rgba(255, 255, 255, 0.05);
+    /* Легкий прозрачный фон */
     padding: 15px;
     border-radius: 12px;
     border: 1px solid #444;
+    /* Тонкая рамка */
     width: fit-content;
+    /* Чтобы блок не растягивался на весь экран */
     margin: 20px 0;
-    /* Вернул отступы только сверху/снизу, без авто-центра */
+    /* Отступы сверху и снизу */
+    text-align: center;
+}
+
+.music figcaption,
+.video figcaption {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #ccc;
 }
 
 audio {
     filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(100%);
     display: block;
+    /* Выбиваем его в отдельную строку, чтобы он мог расширяться */
     width: 400px;
-    margin: 15px 0;
+    /* Попробуй задать фиксированную ширину в пикселях для теста */
+    margin: 0 auto;
+    /* Центрируем его внутри карточки */
 }
 
-video,
-iframe {
+/* Объединяем видео и айфреймы в одну стильную группу */
+video, iframe {
     max-width: 100%;
-    aspect-ratio: 16 / 9;
+    height: auto; /* Важно для адаптивности айфрейма! */
+    aspect-ratio: 16 / 9; /* Сохраняем пропорции видео, чтобы не было черных полос */
     border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    outline: none;
     background-color: #000;
     display: block;
-    margin: 20px 0;
-    border: none;
+    margin: 20px 0; /* Центрируем и даем отступы сверху-снизу */
+    border: none; /* Убираем дефолтную рамку у айфрейма */
+    
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Базовый стиль для всех твоих статус-чекбоксов */
+.status-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 4px;
+  background-color: #ff4d4d; /* Стандартно - КРАСНЫЙ */
+  display: inline-block;
+  position: relative;
+  cursor: not-allowed;
+  vertical-align: middle;
+}
+
+/* Стиль, когда галочка СТОИТ (Checked) */
+.status-checkbox:checked {
+  background-color: #2ecc71; /* ЗЕЛЕНЫЙ */
+  border-color: #27ae60;
+}
+
+/* Рисуем белую галочку внутри зеленого квадрата */
+.status-checkbox:checked::after {
+  content: '✔';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  left: 3px;
+  top: -1px;
+}
+
+
+
+/* 1. Лечим аудио-плеер */
+audio {
+    width: 100%;       /* Растягиваем на всю ширину родителя */
+    max-width: 400px;  /* Но не даем ему стать слишком огромным на планшетах */
     display: block;
-    border-radius: 8px;
     margin: 15px 0;
 }
 
-/* Возвращаем стандартные чекбоксы, раз кастомные не пробивают фильтры */
-input[type="checkbox"] {
-    cursor: not-allowed;
-    vertical-align: middle;
+/* 2. Лечим все картинки (фотографии) */
+img {
+    max-width: 100%;   /* Фото никогда не будет шире экрана */
+    height: auto;      /* Сохраняем пропорции, чтобы лица не сплющило */
+    display: block;    /* Убираем лишние отступы снизу */
+    border-radius: 8px; /* Раз уж у нас везде скругления, добавим и фоткам */
+    margin: 15px 0;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
 }
 
 a:link {
@@ -89,6 +158,14 @@ a:visited {
 
 a:hover {
     color: purple;
+}
+
+a:focus {
+    color: red;
+}
+
+a:active {
+    color: red;
 }
 
 a.home-link:visited {
@@ -109,12 +186,23 @@ h2.date {
 
 .finishback {
     background-color: rgba(255, 215, 0, 0.05);
+    /* Еле заметный золотистый оттенок */
     border-left: 4px solid #ffd700;
+    /* Яркая золотая полоска слева */
     color: #ffd700;
+    /* Золотой текст */
+
+    /* Добавим капельку магии, чтобы выделить финиш */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+    position: relative;
 }
 
 .finish {
     color: #ffd700;
+}
+
+.finishback ul {
+    list-style-type: disc;
 }
 
 footer {
