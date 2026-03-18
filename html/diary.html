@@ -26,7 +26,8 @@
     </header>
     <main>
         <section class="online" id="firston">
-            <h2 class="date"><time datetime="2026-03-02">Date:02.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-02">Date:02.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
             <p>Today I have learned new things, for example: attributes and how to write the code in HTML.</p>
             <p>I am glad, that I can see what I have written in my code (in HTML-format)</p>
             <p>Also I am happy, because that lesson was so interesting for me</p>
@@ -39,7 +40,8 @@
             <a href="02032026.html">Click</a>
         </section>
         <section class="online" id="secondon">
-            <h2 class="date"><time datetime="2026-03-03">Date:03.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-03">Date:03.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
             <p>Today I saw a lot of new things and tags</p>
             <p>Its still very interesting for me and I think that I will continue learning HTML
             <p>
@@ -51,7 +53,8 @@
             <a href="03032026.html">Click</a>
         </section>
         <section class="offline" id="firstoff">
-            <h2><time datetime="2026-03-04">Date:04.03.2026</time> <input type="checkbox"></h2>
+            <h2><time datetime="2026-03-04">Date:04.03.2026</time> <input type="checkbox" class="status-checkbox"
+                    onclick="return false;"></h2>
             <p>Today i learned &lt;div&gt;, what means "id" and "class". </p>
             <p>I spent the whole day outside the house and didn't have the opportunity to either reinforce my knowledge
                 or practice it, so unfortunately I dont have any project for the day.</p>
@@ -60,7 +63,8 @@
                 can see in my journal &lt;&gt;</p>
         </section>
         <section class="offline" id="secondoff">
-            <h2><time datetime="2026-03-05">Date:05.03.2026</time> <input type="checkbox"> </h2>
+            <h2><time datetime="2026-03-05">Date:05.03.2026</time> <input type="checkbox" class="status-checkbox"
+                    onclick="return false;"> </h2>
             <p>Today I woke up at 8 a.m. and by 9 a.m. I was already out helping my mother. I got home at 5:30 p.m. I
                 might finish a bit of the course later in the evening, but Im almost exhausted.</p>
             <p>Its a little sad that a lot of things have popped up almost as soon as I started studying. But I hope I
@@ -75,7 +79,7 @@
         </section>
         <section class="offline" id="moreoff">
             <h2>Date: <time datetime="2026-03-06">06.03.2026</time> - <time datetime="2026-03-14">14.03.2026:</time>
-                Offline / Family & Friends <input type="checkbox"></h2>
+                Offline / Family & Friends <input type="checkbox" class="status-checkbox" onclick="return false;"></h2>
             <p><strong>Status:</strong> Temporarily stepped away from coding to handle real-life tasks.</p>
             <ul>Activity log:
                 <li>Assisting my mother with household matters.</li>
@@ -88,7 +92,8 @@
                 dive into CSS soon.</p>
         </section>
         <section class="online" id="thirdon">
-            <h2 class="date"><time datetime="2026-03-15">Date: 15.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-15">Date: 15.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
             <p>Today I have learned how to use tags &lt;audio&gt;, &lt;video&gt; and more of attributes: </p>
             <ul>
                 <li>controls</li>
@@ -108,7 +113,7 @@
             </figure>
             <figure class="video">
                 <figcaption><strong>What is the meaning of life?</strong></figcaption>
-                <video controls>
+                <video controls playsinline>
                     <source src="../video/video1.mp4" type="video/mp4">
                     <p>К сожалению, ваш браузер не поддерживает видео.</p>
                 </video>
@@ -122,7 +127,8 @@
             </figure>
         </section>
         <section class="online" id="fourthon">
-            <h2 class="date"><time datetime="2026-03-16">Date: 16.03.2026</time> <input type="checkbox" checked></h2>
+            <h2 class="date"><time datetime="2026-03-16">Date: 16.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
             <p>Today I focused on my project architecture, linked all pages together and learned some advanced tags:
             </p>
             <ul>
@@ -149,8 +155,9 @@
             </svg>
 
         </section>
-        <section class="online finishone" id="fifthon">
-            <h2 id="finishonedate"><time datetime="2026-03-17">Date: 17.03.2026</time> <input type="checkbox" checked>
+        <section class="online finishback" id="fifthon">
+            <h2 class="finish"><time datetime="2026-03-17">Date: 17.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;">
             </h2>
             <p>Today was a pretty productive day, I learned and used a lot of new things, and most importantly, today I
                 achieved my first goal.</p>
@@ -174,7 +181,8 @@
                 </li>
                 <li><strong>Milestone Reached:</strong> Officially <strong>finished the "Basic HTML"</strong> course on
                     freeCodeCamp — <strong>137 of 137 lessons completed!</strong>
-                    <br> <img src="../img/finishone.png" alt="Proof that the basic HTML has been completed." width="400">
+                    <br> <img src="../img/finishone.png" alt="Proof that the basic HTML has been completed."
+                        width="400">
                 </li>
                 <li><strong>Next Step:</strong> Moving on to "Semantic HTML" (55 steps) to learn how to make my code
                     accessible and meaningful for search engines and screen readers.</li>
@@ -200,13 +208,36 @@
             </svg>
             <p>The rest of the changes made today affected the CSS file.</p>
         </section>
+        <section class="online" id="sixthon">
+            <h2 class="date"><time datetime="2026-03-16">Date: 17.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>I was away from home all day today, so I didn't learn much.</p>
+            <p><strong>Changes for today:</strong></p>
+            <ul>
+                <li>I was shown outdated tags: (they are <strong>useless</strong>, but it's still better to know them
+                    just in case.)
+                    <ol>
+                        <li>&lt;big&gt;</li>
+                        <li>&lt;center&gt;</li>
+                        <li>&lt;font&gt;</li>
+                    </ol>
+                </li>
+                <li>I edited the CSS file a little.</li>
+                <li>Started learning "semantic HTML".</li>
+                <li>I opened the site on my phone and <strong>fixed three visual bugs.</strong></li>
+            </ul>
+            <p><strong>IMPORTANT! I'm still not familiar with CSS from the courses, and all my changes/innovations are
+                    currently
+                    self-training with AI assistance.</strong></p>
+
+        </section>
     </main>
 
     <footer>
         <hr>
-        <h4>Creator:<strong>Loginov</strong></h4>
-        <h4><strong>Thanks for reading!</strong></h4>
-        <h4><strong>No copyright! :^</strong></h4>
+        <p>Creator:<strong>Loginov</strong></p>
+        <p><strong>Thanks for reading!</strong></p>
+        <p><strong>No copyright! :^</strong></p>
     </footer>
 </body>
 
