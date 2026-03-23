@@ -347,6 +347,67 @@
             <p>Today is Sunday, I decided to rest.</p>
             <p>Tomorrow I'll start learning a new topic.</p>
         </section>
+        <section class="online" id="nineon">
+            <h2><time datetime="2026-03-23">Date:23.03.2026</time> <input type="checkbox" class="status-checkbox"
+                    onclick="return false;"></h2>
+            <p>Today I studied forms.</p>
+            <p>At first it seemed difficult to me, but after I was given a practical task it became easier for me and I
+                understood everything.</p>
+            <p>Today's progress:</p>
+            <ul>
+                <li>I learned about tags:
+                    <code>&lt;form&gt;, &lt;fieldset&gt;, &lt;label&gt;, &lt;input&gt;, &lt;textarea&gt;</code>(I
+                    already knew about it, but I started using it),
+                    <code>&lt;select&gt; &lt;option&gt;, &lt;legend&gt;</code>
+                </li>
+                <li>I learned about attributes: method, action, name, id(already knew it), value(knew it also), for,
+                    type(already knew it), required, placeholder(hahaha, knew it also), min, max, size, selected, rows,
+                    cols.</li>
+            </ul>
+            <p>Now I'll try to write a mini-project: (this is a visual, its not working.)</p>
+            <form method="POST" action="">
+            <!--dont working, bc idk how works "action"-->
+                <fieldset>
+                    <legend>Personal information</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" size="20" required>
+
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" id="email" size="20" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="13" max="100" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Did you like my diary?</legend>
+
+                    <input type="radio" id="yes" name="likeornot" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="likeornot" value="no">
+                    <label for="no">No</label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Describe yourself:</legend>
+
+                    <input type="checkbox" name="choice" id="smart" value="smart">
+                    <label for="smart">Smart</label>
+                    <input type="checkbox" name="choice" id="beautiful" value="beautiful">
+                    <label for="beautiful">Beautiful</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Ratings</legend>
+
+                    <label for="rate">Rate my diary:</label>
+                    <select name="rate" id="rate">
+                        <option value="poor">Poor</option>
+                        <option value="good">Good</option>
+                        <option value="excellent" selected>Excellent</option>
+                    </select>
+                </fieldset>
+                <button type="submit" disabled>Submit form</button>
+            </form>
+        </section>
     </main>
 
     <footer>
