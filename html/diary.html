@@ -348,8 +348,8 @@
             <p>Tomorrow I'll start learning a new topic.</p>
         </section>
         <section class="online" id="nineon">
-            <h2 class="date"><time datetime="2026-03-23">Date:23.03.2026</time> <input type="checkbox" checked class="status-checkbox"
-                    onclick="return false;"></h2>
+            <h2 class="date"><time datetime="2026-03-23">Date:23.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
             <p>Today I studied forms.</p>
             <p>At first it seemed difficult to me, but after I was given a practical task it became easier for me and I
                 understood everything.</p>
@@ -366,10 +366,10 @@
             </ul>
             <p>Now I'll try to write a mini-project: (this is a visual, its not working.)</p>
             <form method="POST" action="">
-            <!--dont working, bc idk how works "action"-->
+                <!--dont working, bc idk how works "action"-->
                 <fieldset>
                     <legend>Personal information</legend>
-                    
+
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" size="20" required>
 
@@ -385,7 +385,7 @@
                     <input type="radio" id="yes" name="likeornot" value="yes">
                     <label for="yes">Yes</label>
                     <input type="radio" id="no" name="likeornot" value="no">
-                    <label for="no">No</label> 
+                    <label for="no">No</label>
                 </fieldset>
                 <fieldset>
                     <legend>Describe yourself:</legend>
@@ -407,6 +407,105 @@
                 </fieldset>
                 <button type="submit" disabled>Submit form</button>
             </form>
+        </section>
+        <section class="online finishback" id="tenon">
+            <h2 class="finish"><time datetime="2026-03-23">Date:23.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>Today, I will most likely finish the "Forms and Tables" course, so below I will rewrite the description
+                of all the attributes/tags so that they will forever remain in my journal for re-reading.</p>
+            <p>If I do finish it, I'll change the color of today's date to gold. (But I won't change the text; I'm too
+                lazy.)</p>
+            <h3>HTML Form Elements and Attributes</h3>
+            <ul>
+                <li><code>&lt;form&gt;</code> <strong>element:</strong> used to create an HTML form for user input.</li>
+                <li><code>action</code> <strong>attribute:</strong> used to specify the URL where the form data should
+                    be sent.</li>
+                <li><code>method</code> <strong>attribute:</strong> used to specify the HTTP method to use when sending
+                    the form data. The most common methods are <code>GET</code> and <code>POST</code>.</li>
+                <li><code>&lt;input&gt;</code> <strong>element:</strong> used to create an input field for user input.
+                </li>
+                <li><code>type</code> <strong>attribute:</strong> used to specify the type of input field. Ex.
+                    <code>text</code>, <code>email</code>, <code>number</code>, <code>radio</code>,
+                    <code>checkbox</code>, etc.
+                </li>
+                <li><code>placeholder</code> <strong>attribute:</strong> used to show a hint to the user to show them
+                    what to enter in the input field.</li>
+                <li><code>value</code> <strong>attribute:</strong> used to specify the value of the input. If the input
+                    has a <code>button</code> type, the <code>value</code> attribute can be used to set the button text.
+                </li>
+                <li><code>name</code> <strong>attribute:</strong> used to assign a name to an input field, which serves
+                    as the key when form data is submitted. For radio buttons, giving them the same <code>name</code>
+                    groups them together, so only one option in the group can be selected at a time.</li>
+                <li><code>size</code> <strong>attribute:</strong> used to define the number of characters that should be
+                    visible as the user types into the input.</li>
+                <li><code>min</code> <strong>attribute:</strong> can be used with input types such as
+                    <code>number</code> to specify the minimum value allowed in the input field.
+                </li>
+                <li><code>max</code> <strong>attribute:</strong> can be used with input types such as
+                    <code>number</code> to specify the maximum value allowed in the input field.
+                </li>
+                <li><code>minlength</code> <strong>attribute:</strong> used to specify the minimum number of characters
+                    required in an input field.</li>
+                <li><code>maxlength</code> <strong>attribute:</strong> used to specify the maximum number of characters
+                    allowed in an input field.</li>
+                <li><code>required</code> <strong>attribute:</strong> used to specify that an input field must be filled
+                    out before submitting the form.</li>
+                <li><code>disabled</code> <strong>attribute:</strong> used to specify that an input field should be
+                    disabled.</li>
+                <li><code>readonly</code> <strong>attribute:</strong> used to specify that an input field is read-only.
+                </li>
+                <li><code>&lt;label&gt;</code> <strong>element:</strong> used to create a label for an input field.</li>
+                <li><code>for</code> <strong>attribute:</strong> used to specify which input field the label is for.
+                </li>
+                <li><strong>Implicit form association:</strong> inputs can be associated with labels by wrapping the
+                    input field inside the <code>&lt;label&gt;</code> element.</li>
+                <li><strong>Explicit form association:</strong> inputs can be associated with labels by using the
+                    <code>for</code> attribute on the <code>&lt;label&gt;</code> element.
+                </li>
+                <li><code>&lt;button&gt;</code> <strong>element:</strong> used to create a clickable button. A button
+                    can also have a <code>type</code> attribute, which is used to control the behavior of the button
+                    when it is activated. Ex. <code>submit</code>, <code>reset</code>, <code>button</code>.</li>
+                <li><code>&lt;fieldset&gt;</code> <strong>element:</strong> used to group related inputs together.</li>
+                <li><code>&lt;legend&gt;</code> <strong>element:</strong> used to add a caption to describe the group of
+                    inputs.</li>
+                <li><strong>Focused state:</strong> this is the state of an input field when it is selected by the user.
+                </li>
+            </ul>
+
+            <h3>Working with HTML Table Elements and Attributes</h3>
+            <ul>
+                <li><strong>Table element:</strong> used to create an HTML table.</li>
+                <li><strong>Table Head (<code>&lt;thead&gt;</code>) element:</strong> used to group the header content
+                    in an HTML table.</li>
+                <li><strong>Table Row (<code>&lt;tr&gt;</code>) element:</strong> used to create a row in an HTML table.
+                </li>
+                <li><strong>Table Header (<code>&lt;th&gt;</code>) element:</strong> used to create a header cell in an
+                    HTML table.</li>
+                <li><strong>Table body (<code>&lt;tbody&gt;</code>) element:</strong> used to group the body content in
+                    an HTML table.</li>
+                <li><strong>Table Data Cell (<code>&lt;td&gt;</code>) element:</strong> used to create a data cell in an
+                    HTML table.</li>
+                <li><strong>Table Foot (<code>&lt;tfoot&gt;</code>) element:</strong> used to group the footer content
+                    in an HTML table.</li>
+                <li><code>&lt;caption&gt;</code> <strong>element:</strong> used to add a title of an HTML table.</li>
+                <li><code>colspan</code> <strong>attribute:</strong> used to specify the number of columns a table cell
+                    should span.</li>
+            </ul>
+
+            <h3>Working with HTML Tools</h3>
+            <ul>
+                <li><strong>HTML validator:</strong> a tool that checks the syntax of HTML code to ensure it is valid.
+                </li>
+                <li><strong>DOM inspector:</strong> a tool that allows you to inspect and modify the HTML structure of a
+                    web page.</li>
+                <li><strong>Devtools:</strong> a set of web developer tools built directly into the browser that helps
+                    you debug, profile, and analyze web pages.</li>
+            </ul>
+            <p><strong>UPD: I successfully completed</strong> the "Forms and Tables" course and
+                <strong>passed</strong> my first "certification project"</p>
+            <p>I'm attaching a screenshot:</p>
+            <img src="../img/finish3.jpg" alt="screenshot where you can see that the 'Forms and Tables' is finished" width="400">
+            <p>The next course is "Accessibility"</p>
         </section>
     </main>
 
