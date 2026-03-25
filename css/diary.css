@@ -222,6 +222,10 @@ h2.date {
     color: #d60000;
 }
 
+.finishglobal ul {
+    list-style-type: disc;
+}
+
 footer {
     background-color: #111;
     color: #888;
