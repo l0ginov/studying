@@ -511,29 +511,78 @@
         </section>
         <section class="online finishglobal">
             <h2 class="finishdateglobal"><time datetime="2026-03-25">Date: 25.03.2026</time> <input type="checkbox"
-                    checked class="status-checkbox" onclick="return false;"></h2>
+                    checked class="status-checkbox" onclick="return false;">
+                <svg width="50" height="50" viewBox="0 0 100 100" style="vertical-align: middle; margin-left: 10px;">
+                    <path d="M 20 30 Q 25 35 25 60 L 75 60 Q 75 35 80 30 Q 70 50 60 25 Q 50 45 40 25 Q 30 50 20 30" stroke="black" stroke-width="2" fill="gold"/>
+                    <circle cx="20" cy="25" r="5" stroke="black" fill="gold"/>
+                    <circle cx="40" cy="20" r="5" stroke="black" fill="gold"/>
+                    <circle cx="60" cy="20" r="5" stroke="black" fill="gold"/>
+                    <circle cx="80" cy="25" r="5" stroke="black" fill="gold"/>
+                </svg>
+            </h2>
             <p>Today I became a native speaker of <strong>my first programming language.</strong></p>
             <p>In just <strong>11 days of working online, I became a native HTML speaker.</strong> This is a
                 <strong>very important</strong> day for me
-                and a sign that I can do it if I want to.</p>
+                and a sign that I can do it if I want to.
+            </p>
             <p>Next up for me is the <strong>"Computers" course</strong> (16 lessons in total)</p>
             <p>I don't even know what to add. I didn't learn as much new in the "Accessibility" course as I thought I
-                would, since that section is closely tied to semantics. But I'll still include everything I learned</p>
+                would, since that section is closely tied to semantics. But I will tell you about everything that was covered in this course.</p>
             <h3>Accessibility & Advanced HTML Summary</h3>
             <ol>
                 <li><strong>Multimedia Accessibility</strong>
                     <ul>
-                        <li><code>&lt;track&gt;</code> element: A self-closing tag used inside <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code> to provide timed text tracks.
+                        <li><code>&lt;track&gt;</code> element: A self-closing tag used inside
+                            <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code> to provide timed text tracks.
                             <ul>
                                 <li><code>src</code>: Path to the <code>.vtt</code> file.</li>
-                                <li><code>kind</code>: Defines the type of text (e.g., <code>subtitles</code>, <code>captions</code>, <code>descriptions</code>, <code>chapters</code>).</li>
-                                <li><code>srclang</code>: Language of the track (e.g., <code>en</code>, <code>fi</code>).</li>
+                                <li><code>kind</code>: Defines the type of text (e.g., <code>subtitles</code>,
+                                    <code>captions</code>, <code>descriptions</code>, <code>chapters</code>).</li>
+                                <li><code>srclang</code>: Language of the track (e.g., <code>en</code>,
+                                    <code>fi</code>).</li>
                                 <li><code>label</code>: The title shown to the user in the selection menu.</li>
                             </ul>
                         </li>
                     </ul>
                 </li>
+                <li><strong>WAI-ARIA (Accessible Rich Internet Applications)</strong>
+                    <ul>
+                        <li><code>role</code> attribute: Defines the semantic purpose of an element when the tag itself
+                            doesn't provide it (e.g., <code>role="button"</code> on a <code>div</code>).</li>
+                        <li><code>aria-label</code>: Provides a string of text to label an element that has no visible
+                            text.</li>
+                        <li><code>aria-hidden="true"</code>: Hides decorative or redundant elements from assistive
+                            technologies.</li>
+                        <li><code>aria-describedby</code>: References the ID of another element that provides a detailed
+                            description of the current element.</li>
+                    </ul>
+                </li>
+                <li><strong>Semantic Structure</strong>
+                    <ul>
+                        <li><code>&lt;figure&gt;</code> & <code>&lt;figcaption&gt;</code>: Used to group an image or media with its descriptive caption.</li>
+                        <li><code>&lt;aside&gt;</code>: Represents content that is indirectly related to the main content (like sidebars or pull-quotes).</li>
+                        <li><strong>Landmark Roles:</strong> Implicit roles like <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> that help users navigate page regions.</li>
+                    </ul>
+                </li>
+                <li><strong>Form Accessibility Best Practices</strong>
+                    <ul>
+                        <li><strong>Label Association:</strong> Linking <code>&lt;label for="ID"&gt;</code> with <code>&lt;input id="ID"&gt;</code>.</li>
+                        <li><strong>Form Validation:</strong> Using the <code>required</code> attribute to communicate mandatory fields.</li>
+                        <li><strong>Visual Cues:</strong> Using <code>&lt;span&gt;</code>*<code>&lt;/span&gt;</code> with <code>aria-hidden="true"</code> so the asterisk is visible but ignored by screen readers.</li>
+                    </ul>
+                </li>
+                <li><strong>The POUR Principles (WCAG)</strong>
+                    <ul>
+                        <li><strong>Perceivable:</strong> Users must be able to see or hear the content.</li>
+                        <li><strong>Operable:</strong> Users must be able to navigate the interface (keyboard, mouse, etc.).</li>
+                        <li><strong>Understandable:</strong> Users must understand how to use the interface.</li>
+                        <li><strong>Robust:</strong> The code must work across different browsers and assistive tools.</li>
+                    </ul>
+                </li>
             </ol>
+            <p>Below I've attached a screenshot showing that the HTML course has been successfully completed:</p>
+            <img src="../img/finishglobal.jpg" alt="screenshot where you can see that the html course has been completed" width="400">
+            <p>The next course is "Computers"</p>
         </section>
     </main>
 
