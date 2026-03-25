@@ -205,6 +205,23 @@ h2.date {
     list-style-type: disc;
 }
 
+.finishglobal {
+    background-color: rgba(107, 0, 0, 0.05);
+    /* Еле заметный золотистый оттенок */
+    border-left: 4px solid #d60000;
+    /* Яркая золотая полоска слева */
+    color: #d60000;
+    /* Золотой текст */
+
+    /* Добавим капельку магии, чтобы выделить финиш */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+    position: relative;
+}
+
+.finishdateglobal {
+    color: #d60000;
+}
+
 footer {
     background-color: #111;
     color: #888;
