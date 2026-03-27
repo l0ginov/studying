@@ -513,11 +513,12 @@
             <h2 class="finishdateglobal"><time datetime="2026-03-25">Date: 25.03.2026</time> <input type="checkbox"
                     checked class="status-checkbox" onclick="return false;">
                 <svg width="50" height="50" viewBox="0 0 100 100" style="vertical-align: middle; margin-left: 10px;">
-                    <path d="M 20 30 Q 25 35 25 60 L 75 60 Q 75 35 80 30 Q 70 50 60 25 Q 50 45 40 25 Q 30 50 20 30" stroke="black" stroke-width="2" fill="gold"/>
-                    <circle cx="20" cy="25" r="5" stroke="black" fill="gold"/>
-                    <circle cx="40" cy="20" r="5" stroke="black" fill="gold"/>
-                    <circle cx="60" cy="20" r="5" stroke="black" fill="gold"/>
-                    <circle cx="80" cy="25" r="5" stroke="black" fill="gold"/>
+                    <path d="M 20 30 Q 25 35 25 60 L 75 60 Q 75 35 80 30 Q 70 50 60 25 Q 50 45 40 25 Q 30 50 20 30"
+                        stroke="black" stroke-width="2" fill="gold" />
+                    <circle cx="20" cy="25" r="5" stroke="black" fill="gold" />
+                    <circle cx="40" cy="20" r="5" stroke="black" fill="gold" />
+                    <circle cx="60" cy="20" r="5" stroke="black" fill="gold" />
+                    <circle cx="80" cy="25" r="5" stroke="black" fill="gold" />
                 </svg>
             </h2>
             <p>Today I became a native speaker of <strong>my first programming language.</strong></p>
@@ -527,7 +528,8 @@
             </p>
             <p>Next up for me is the <strong>"Computers" course</strong> (16 lessons in total)</p>
             <p>I don't even know what to add. I didn't learn as much new in the "Accessibility" course as I thought I
-                would, since that section is closely tied to semantics. But I will tell you about everything that was covered in this course.</p>
+                would, since that section is closely tied to semantics. But I will tell you about everything that was
+                covered in this course.</p>
             <h3>Accessibility & Advanced HTML Summary</h3>
             <ol>
                 <li><strong>Multimedia Accessibility</strong>
@@ -537,9 +539,11 @@
                             <ul>
                                 <li><code>src</code>: Path to the <code>.vtt</code> file.</li>
                                 <li><code>kind</code>: Defines the type of text (e.g., <code>subtitles</code>,
-                                    <code>captions</code>, <code>descriptions</code>, <code>chapters</code>).</li>
+                                    <code>captions</code>, <code>descriptions</code>, <code>chapters</code>).
+                                </li>
                                 <li><code>srclang</code>: Language of the track (e.g., <code>en</code>,
-                                    <code>fi</code>).</li>
+                                    <code>fi</code>).
+                                </li>
                                 <li><code>label</code>: The title shown to the user in the selection menu.</li>
                             </ul>
                         </li>
@@ -559,30 +563,110 @@
                 </li>
                 <li><strong>Semantic Structure</strong>
                     <ul>
-                        <li><code>&lt;figure&gt;</code> & <code>&lt;figcaption&gt;</code>: Used to group an image or media with its descriptive caption.</li>
-                        <li><code>&lt;aside&gt;</code>: Represents content that is indirectly related to the main content (like sidebars or pull-quotes).</li>
-                        <li><strong>Landmark Roles:</strong> Implicit roles like <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> that help users navigate page regions.</li>
+                        <li><code>&lt;figure&gt;</code> & <code>&lt;figcaption&gt;</code>: Used to group an image or
+                            media with its descriptive caption.</li>
+                        <li><code>&lt;aside&gt;</code>: Represents content that is indirectly related to the main
+                            content (like sidebars or pull-quotes).</li>
+                        <li><strong>Landmark Roles:</strong> Implicit roles like <code>&lt;main&gt;</code>,
+                            <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> that
+                            help users navigate page regions.
+                        </li>
                     </ul>
                 </li>
                 <li><strong>Form Accessibility Best Practices</strong>
                     <ul>
-                        <li><strong>Label Association:</strong> Linking <code>&lt;label for="ID"&gt;</code> with <code>&lt;input id="ID"&gt;</code>.</li>
-                        <li><strong>Form Validation:</strong> Using the <code>required</code> attribute to communicate mandatory fields.</li>
-                        <li><strong>Visual Cues:</strong> Using <code>&lt;span&gt;</code>*<code>&lt;/span&gt;</code> with <code>aria-hidden="true"</code> so the asterisk is visible but ignored by screen readers.</li>
+                        <li><strong>Label Association:</strong> Linking <code>&lt;label for="ID"&gt;</code> with
+                            <code>&lt;input id="ID"&gt;</code>.
+                        </li>
+                        <li><strong>Form Validation:</strong> Using the <code>required</code> attribute to communicate
+                            mandatory fields.</li>
+                        <li><strong>Visual Cues:</strong> Using <code>&lt;span&gt;</code>*<code>&lt;/span&gt;</code>
+                            with <code>aria-hidden="true"</code> so the asterisk is visible but ignored by screen
+                            readers.</li>
                     </ul>
                 </li>
                 <li><strong>The POUR Principles (WCAG)</strong>
                     <ul>
                         <li><strong>Perceivable:</strong> Users must be able to see or hear the content.</li>
-                        <li><strong>Operable:</strong> Users must be able to navigate the interface (keyboard, mouse, etc.).</li>
+                        <li><strong>Operable:</strong> Users must be able to navigate the interface (keyboard, mouse,
+                            etc.).</li>
                         <li><strong>Understandable:</strong> Users must understand how to use the interface.</li>
-                        <li><strong>Robust:</strong> The code must work across different browsers and assistive tools.</li>
+                        <li><strong>Robust:</strong> The code must work across different browsers and assistive tools.
+                        </li>
                     </ul>
                 </li>
             </ol>
             <p>Below I've attached a screenshot showing that the HTML course has been successfully completed:</p>
-            <img src="../img/finishglobal.jpg" alt="screenshot where you can see that the html course has been completed" width="400">
+            <img src="../img/finishglobal.jpg"
+                alt="screenshot where you can see that the html course has been completed" width="400">
             <p>The next course is "Computers"</p>
+        </section>
+        <section class="online finishglobal">
+            <h2 class="finishdateglobal"><time datetime="2026-03-26">Date: 26.03.2026</time> <input type="checkbox"
+                    checked class="status-checkbox" onclick="return false;"></h2>
+            <p><strong>Today I took the "Computers" course.</strong> I wouldn't say I learned much new, but there were
+                some interesting
+                things. Otherwise, it's a pretty <strong>boring</strong> course that teaches the basics that many people
+                know today.</p>
+            <p>I will attach my progress so far below:</p>
+            <img src="../img/finish4.jpg"
+                alt="screenshot where you can see that the computers course has been completed" width="400">
+            <p>That's not all for today, so I will continue to add information.</p>
+            <p><strong>I'm now officially starting to dive into CSS.</strong></p>
+            <h3>Start of the CSS course.</h3>
+            <p>Today I learned the difference between CSS selectors:</p>
+            <ul>
+                <li><code>.className</code> is for classes.</li>
+                <li><code>#idName</code> is for IDs.</li>
+                <li><code>tagName</code> (no prefix) is for HTML tags.</li>
+            </ul>
+            <p>I already knew about this. But I'll still write it down for the record.</p>
+            <p>I'm currently fighting with FCC's weird semantics. They use <code>&lt;article&gt;</code> for every single
+                menu item, which <strong>feels like overkill (over-engineering)</strong>, but it's good practice for
+                targeting nested elements.</p>
+            <p>If you use <code>display: inline-block</code>, the browser treats line breaks in HTML as real spaces. To
+                fit two 50% elements in one row, you must remove the space between tags in your HTML code or use
+                <code>font-size: 0</code> on the parent container.
+            </p>
+            <p>FreeCodeCamp often creates unnecessary nesting (like putting
+                <code>&lt;main&gt;</code> inside a <code>&lt;div&gt;</code>). In real projects, keep the HTML tree as
+                flat as possible. Also, I’m still forced to
+                keep tags on one line to avoid the inline-block whitespace bug — can't wait to learn Flexbox to fix
+                this properly.
+            </p>
+            <p>Time: <time datetime="2026-03-26T02:18">2:18 AM</time>. I'm a little behind on my studies. Today I
+                managed to complete 99 steps in the CSS course.</p>
+            <p>Below I will write the attributes that I learned today:</p>
+            <ul>
+                <li><code>background-image</code>: Sets an image as the background of an element (used the url()
+                    function here).</li>
+                <li><code>font-family</code>: Defines the typeface/font for the text (e.g., <code>sans-serif</code>,
+                    <code>Impact</code>).</li>
+                <li><code>padding</code>: Creates space inside the element, between the content and the border.</li>
+                <li><code>font-size</code>: Sets the size of the text (measured in px in this project).</li>
+                <li><code>margin-top / margin-bottom</code>: Creates space outside the element at the top or bottom.
+                </li>
+                <li><code>font-style</code>: Changes the text style (e.g., <code>italic</code> for emphasis or
+                    <code>normal</code> to reset it).</li>
+                <li><code>text-align</code>: Aligns the text inside its container (<code>left</code>,
+                    <code>center</code>, or <code>right</code>).</li>
+                <li><code>width / max-width</code>: Sets the horizontal size of an element. <code>max-width</code>
+                    prevents it from growing beyond a certain point.</li>
+                <li><code>background-color</code>: Sets the solid color of the background.</li>
+                <li><code>margin-left: auto / margin-right: auto</code>: A classic trick to horizontally center a block
+                    element within its parent.</li>
+                <li><code>display</code>: Defines how an element is rendered. <code>block</code> takes the full width;
+                    <code>inline-block</code> allows elements to sit side-by-side.</li>
+                <li><code>height</code>: Sets the vertical size of an element (used for the <code>&lt;hr&gt;</code>
+                    lines).</li>
+                <li><code>border-color</code>: Changes the color of the element's border.</li>
+                <li><code>color</code>: Sets the color of the text itself.</li>
+                <li><code>text-decoration</code>: (Often used for links) Can add or remove underlines.</li>
+                <li><code>a:visited</code>: Styles a link that the user has already clicked/visited.</li>
+                <li><code>a:hover</code>: Styles an element when the user hovers their mouse pointer over it.</li>
+                <li><code>a:active</code>: Styles an element at the exact moment it is being clicked.</li>
+            </ul>
+            <p>However, I'm pleased with today's progress. I hope it will be as easy in the future as it is now.</p>
         </section>
     </main>
 
