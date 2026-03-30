@@ -694,14 +694,36 @@
                     class="status-checkbox" onclick="return false;"></h2>
             <p>Today I have a lot of theory on CSS topics.</p>
             <p>Below I will write down something interesting to remember, and perhaps, if I manage to get to the tasks, I will tell you about something new for myself.</p>
-            <p>Specificity values are calculated as a four-part value <code>(a, b, c, d)</code>:</p>
+            <p>Below I will write notes on the material I have learned so that I can easily recall it when I open my diary.</p>
+            <h3>Specificity values are calculated as a four-part value <code>(a, b, c, d)</code>:</h3>
             <ul>
                 <li><code>a</code>: Inline styles (<code>1</code> or <code>0</code>).</li>
                 <li><code>b</code>: Number of ID selectors.</li>
                 <li><code>c</code>: Number of class selectors, attribute selectors, and pseudo-classes.</li>
                 <li><code>d</code>: Number of type selectors, pseudo-elements, and universal selectors.</li>
             </ul>
-            <p>Besides the course, I decided that I was tired of the basic look of the <code> tag and thought I would use my new basic CSS skills to make it prettier.</p>
+            <p>Besides the course, I decided that I was tired of the basic look of the <code>&lt;code&gt;</code> tag and thought I would use my new basic CSS skills to make it prettier.</p>
+            <h3>The <code>!important</code> Rule:</h3>
+            <p>It is a CSS keyword used to override all other styling rules for a specific property. It has the absolute highest priority and completely ignores selector specificity (IDs, classes, etc.).</p>
+            <p style="font-size: 18px"><b>Example:</b></p>
+            <p><code>p { color: blue !important; }</code> — This text will be blue even if there is a more specific ID selector trying to make it red.</p>
+            <p style="margin: 10px 0"><b>Key Rule:</b> Use it only as a last resort (for example, when you can't change an external CSS library). Overusing it makes debugging your code a nightmare because it breaks the natural cascade.</p>
+            <h3>The Cascade Algorithm</h3>
+            <p>The Cascade is the engine that decides which CSS rules win when multiple styles target the same element. It follows this priority logic:</p>
+            <ol>
+                <li><b>Relevance:</b> Does the selector match the element? Are media queries (device size) active?</li>
+                <li><b>Origin & Importance:</b> Direct styles from the author (you) beat browser defaults. The <code>!important</code> flag beats everything.</li>
+                <li><b>Specificity:</b> The more specific the selector (IDs > Classes > Tags), the more "weight" it has.</li>
+                <li><b>Order of Appearance:</b> If everything else is equal, the rule written last in the code wins.</li>
+            </ol>
+            <h3>The <code>inherit</code> Keyword</h3>
+            <p>The <code>inherit</code> value forces an element to take the property value from its parent element, even if that property isn't inherited by default.</p>
+            <ul>
+                <li><b>Best Use:</b> Forcing form elements (<code>button</code>, <code>input</code>) to use the same font or color as the rest of the page.</li>
+                <li><b>Danger:</b> If used globally (e.g., on the <code>*</code> selector) for properties like <code>margin</code> or <code>border</code>, it can create a "nesting doll" effect and break your layout.</li>
+            </ul>
+            <p>I think I'll finish for today. I'll continue studying tomorrow.</p>
+        </section>
     </main>
 
     <footer>
