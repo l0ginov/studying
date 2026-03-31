@@ -13,13 +13,17 @@
     <meta property="og:description" content="Look how I learned to make websites in a couple of days!" />
     <!-- НЕ ЗАБУДЬ ДОБАВИТЬ ССЫЛКИ И КАРТИНКУ КАК ТОЛЬКО САЙТ ПЕРЕСТАНЕТ БЫТЬ ЧИСТО ЛОКАЛЬНЫМ!-->
     <link rel="stylesheet" href="../css/diary.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Playfair+Display:ital,wght@1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <hr>
         <h1>Loginov's site</h1>
-        <p>Welcome to my blog! Here you can track my progress in HTML, CSS, and JavaScript programming.</p>
+        <p style="font-size: 22px;"><b>Welcome to my blog!</b> Here you can track my progress in HTML, CSS, and
+            JavaScript programming.</p>
         <hr>
         <nav><a href="../index.html">Back to main menu</a></nav>
         <hr>
@@ -34,7 +38,8 @@
             <p>I hope, that I will continue learning HTML and other programming languages, because it looks beautiful
                 when you write something from the beginning</p>
             <p>There is what I have learned throughout a day:</p>
-            <p><code>&lt;a&gt;, &lt;h1-h6&gt;, &lt;p&gt;, &lt;img&gt;, &lt;input&gt;, &lt;button&gt;</code> and attributes:</p>
+            <p><code>&lt;a&gt;, &lt;h1-h6&gt;, &lt;p&gt;, &lt;img&gt;, &lt;input&gt;, &lt;button&gt;</code> and
+                attributes:</p>
             <p><code>disabled, alt, width</code></p>
             <p>A project I made based on the knowledge I gained:</p>
             <a href="02032026.html">Click</a>
@@ -94,7 +99,8 @@
         <section class="online" id="thirdon">
             <h2 class="date"><time datetime="2026-03-15">Date: 15.03.2026</time> <input type="checkbox" checked
                     class="status-checkbox" onclick="return false;"></h2>
-            <p>Today I have learned how to use tags <code>&lt;audio&gt;, &lt;video&gt;</code> and more of attributes: </p>
+            <p>Today I have learned how to use tags <code>&lt;audio&gt;, &lt;video&gt;</code> and more of attributes:
+            </p>
             <ul>
                 <li><code>controls</code></li>
                 <li><code>muted</code></li>
@@ -102,7 +108,8 @@
                 <li><code>poster</code></li>
             </ul>
             <p>Also I learned an attribute "width", but I already knew it.</p>
-            <p>Besides this, I learned about <code>&lt;source&gt;</code>, and I want to use my new knowledge for project:</p>
+            <p>Besides this, I learned about <code>&lt;source&gt;</code>, and I want to use my new knowledge for
+                project:</p>
             <figure class="music">
                 <figcaption><strong>Now Playing: Armin van Buuren feat. Sharon Den Adel-In And Out Of
                         Love</strong></figcaption>
@@ -685,16 +692,17 @@
             <p>The weekend is starting, and I'm going to visit my relatives. I'll resume my studies on Monday.</p>
         </section>
         <section class="offline">
-            <h2><time datetime="2026-03-28">Date: 28.03.2026</time> - <time datetime="2026-03-29">29.03.2026</time>  <input type="checkbox" class="status-checkbox"
-                    onclick="return false;"> </h2>
+            <h2><time datetime="2026-03-28">Date: 28.03.2026</time> - <time datetime="2026-03-29">29.03.2026</time>
+                <input type="checkbox" class="status-checkbox" onclick="return false;">
+            </h2>
             <p>Weekend, trip to visit relatives.</p>
         </section>
         <section class="online">
             <h2 class="date"><time datetime="2026-03-30">Date: 30.03.2026</time> <input type="checkbox" checked
                     class="status-checkbox" onclick="return false;"></h2>
             <p>Today I have a lot of theory on CSS topics.</p>
-            <p>Below I will write down something interesting to remember, and perhaps, if I manage to get to the tasks, I will tell you about something new for myself.</p>
-            <p>Below I will write notes on the material I have learned so that I can easily recall it when I open my diary.</p>
+            <p>Below I will write notes on the material I have learned so that I can easily recall it when I open my
+                diary.</p>
             <h3>Specificity values are calculated as a four-part value <code>(a, b, c, d)</code>:</h3>
             <ul>
                 <li><code>a</code>: Inline styles (<code>1</code> or <code>0</code>).</li>
@@ -702,33 +710,81 @@
                 <li><code>c</code>: Number of class selectors, attribute selectors, and pseudo-classes.</li>
                 <li><code>d</code>: Number of type selectors, pseudo-elements, and universal selectors.</li>
             </ul>
-            <p>Besides the course, I decided that I was tired of the basic look of the <code>&lt;code&gt;</code> tag and thought I would use my new basic CSS skills to make it prettier.</p>
+            <p>Besides the course, I decided that I was tired of the basic look of the <code>&lt;code&gt;</code> tag and
+                thought I would use my new basic CSS skills to make it prettier.</p>
             <h3>The <code>!important</code> Rule:</h3>
-            <p>It is a CSS keyword used to override all other styling rules for a specific property. It has the absolute highest priority and completely ignores selector specificity (IDs, classes, etc.).</p>
+            <p>It is a CSS keyword used to override all other styling rules for a specific property. It has the absolute
+                highest priority and completely ignores selector specificity (IDs, classes, etc.).</p>
             <p style="font-size: 18px"><b>Example:</b></p>
-            <p><code>p { color: blue !important; }</code> — This text will be blue even if there is a more specific ID selector trying to make it red.</p>
-            <p style="margin: 10px 0"><b>Key Rule:</b> Use it only as a last resort (for example, when you can't change an external CSS library). Overusing it makes debugging your code a nightmare because it breaks the natural cascade.</p>
+            <p><code>p { color: blue !important; }</code> — This text will be blue even if there is a more specific ID
+                selector trying to make it red.</p>
+            <p style="margin: 10px 0"><b>Key Rule:</b> Use it only as a last resort (for example, when you can't change
+                an external CSS library). Overusing it makes debugging your code a nightmare because it breaks the
+                natural cascade.</p>
             <h3>The Cascade Algorithm</h3>
-            <p>The Cascade is the engine that decides which CSS rules win when multiple styles target the same element. It follows this priority logic:</p>
+            <p>The Cascade is the engine that decides which CSS rules win when multiple styles target the same element.
+                It follows this priority logic:</p>
             <ol>
                 <li><b>Relevance:</b> Does the selector match the element? Are media queries (device size) active?</li>
-                <li><b>Origin & Importance:</b> Direct styles from the author (you) beat browser defaults. The <code>!important</code> flag beats everything.</li>
-                <li><b>Specificity:</b> The more specific the selector (IDs > Classes > Tags), the more "weight" it has.</li>
-                <li><b>Order of Appearance:</b> If everything else is equal, the rule written last in the code wins.</li>
+                <li><b>Origin & Importance:</b> Direct styles from the author (you) beat browser defaults. The
+                    <code>!important</code> flag beats everything.
+                </li>
+                <li><b>Specificity:</b> The more specific the selector (IDs > Classes > Tags), the more "weight" it has.
+                </li>
+                <li><b>Order of Appearance:</b> If everything else is equal, the rule written last in the code wins.
+                </li>
             </ol>
             <h3>The <code>inherit</code> Keyword</h3>
-            <p>The <code>inherit</code> value forces an element to take the property value from its parent element, even if that property isn't inherited by default.</p>
+            <p>The <code>inherit</code> value forces an element to take the property value from its parent element, even
+                if that property isn't inherited by default.</p>
             <ul>
-                <li><b>Best Use:</b> Forcing form elements (<code>button</code>, <code>input</code>) to use the same font or color as the rest of the page.</li>
-                <li><b>Danger:</b> If used globally (e.g., on the <code>*</code> selector) for properties like <code>margin</code> or <code>border</code>, it can create a "nesting doll" effect and break your layout.</li>
+                <li><b>Best Use:</b> Forcing form elements (<code>button</code>, <code>input</code>) to use the same
+                    font or color as the rest of the page.</li>
+                <li><b>Danger:</b> If used globally (e.g., on the <code>*</code> selector) for properties like
+                    <code>margin</code> or <code>border</code>, it can create a "nesting doll" effect and break your
+                    layout.
+                </li>
             </ul>
             <p>I think I'll finish for today. I'll continue studying tomorrow.</p>
+        </section>
+        <section class="online">
+            <h2 class="date"><time datetime="2026-03-31">Date: 31.03.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>Today I <b>completed my first CSS quiz.</b></p>
+            <p>The course material was well-studied and I remembered it all quite easily and quickly.</p>
+            <p>Now I'll go over the theory a bit, write some notes on the theory below, and I think that's it for today.
+                However, my plans for today are roughly the same as for yesterday.</p>
+            <h3>What I learned today:</h3>
+            <ul>
+                <li><code>margin-bottom</code>: Sets the external space between list items, pushing them apart.</li>
+                <li><code>line-height</code>: Sets the vertical space inside the list item, affecting the distance
+                    between lines of text.</li>
+            </ul>
+            <p><b>Difference:</b> Use margin to separate blocks of content; use line-height to make the text inside a
+                single block readable.</p>
+            <ul>
+                <li><code>list-style-type</code>: Defines the marker type (e.g., <code>disc</code>, <code>circle</code>,
+                    <code>square</code>, or <code>none</code> to hide it).</li>
+                <li><code>list-style-image</code>: Sets a custom image to be used as the list item marker instead of a
+                    standard bullet.</li>
+                <li><code>list-style-position</code>: Determines if the marker sits inside or outside the list item's
+                    content box (<code>inside</code> or <code>outside</code>).</li>
+            </ul>
+            <p><code>list-style</code>: A shorthand property that allows you to set <code>type</code>,
+                <code>position</code>, and <code>image</code> all in one single line.</p>
+            <p><b>Example:</b> <code>list-style: square inside url("icon.png");</code> (Order: type, position, image).
+            </p>
+            <p><strong>Why use it:</strong> It keeps your CSS clean and prevents you from writing three separate lines
+                for one list.</p>
+            <p>I think I'll call it a day, as I've been out all day and am very tired. Tomorrow I have a lab, and
+                perhaps, if I have time, more theory and lab work, and the end of the first section of the CSS course.
+            </p>
         </section>
     </main>
 
     <footer>
         <hr>
-        <p>Creator:<strong>Loginov</strong></p>
+        <p>Creator: <strong>Loginov</strong></p>
         <p><strong>Thanks for reading!</strong></p>
         <p><strong>No copyright! :^</strong></p>
     </footer>

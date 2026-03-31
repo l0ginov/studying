@@ -145,7 +145,14 @@ img {
 a {
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
+    transition: 0.3s;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 6px;
+    display: inline-block;
 }
 
 a:link {
@@ -177,7 +184,16 @@ a.home-link:hover {
 }
 
 h1 {
-    color: rgb(104, 80, 211)
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 48px;
+    color: #6850d3;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin: 20px 0;
+    letter-spacing: -5px;
 }
 
 h2.date {
@@ -241,5 +257,5 @@ code {
     padding: 2px 5px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 0.95em;
+    font-size: 1em;
 }
