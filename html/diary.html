@@ -764,14 +764,16 @@
                 single block readable.</p>
             <ul>
                 <li><code>list-style-type</code>: Defines the marker type (e.g., <code>disc</code>, <code>circle</code>,
-                    <code>square</code>, or <code>none</code> to hide it).</li>
+                    <code>square</code>, or <code>none</code> to hide it).
+                </li>
                 <li><code>list-style-image</code>: Sets a custom image to be used as the list item marker instead of a
                     standard bullet.</li>
                 <li><code>list-style-position</code>: Determines if the marker sits inside or outside the list item's
                     content box (<code>inside</code> or <code>outside</code>).</li>
             </ul>
             <p><code>list-style</code>: A shorthand property that allows you to set <code>type</code>,
-                <code>position</code>, and <code>image</code> all in one single line.</p>
+                <code>position</code>, and <code>image</code> all in one single line.
+            </p>
             <p><b>Example:</b> <code>list-style: square inside url("icon.png");</code> (Order: type, position, image).
             </p>
             <p><strong>Why use it:</strong> It keeps your CSS clean and prevents you from writing three separate lines
@@ -779,6 +781,28 @@
             <p>I think I'll call it a day, as I've been out all day and am very tired. Tomorrow I have a lab, and
                 perhaps, if I have time, more theory and lab work, and the end of the first section of the CSS course.
             </p>
+        </section>
+        <section class="online">
+            <h2 class="date"><time datetime="2026-04-01">Date: 01.04.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>Today I completed only 4 theories and one lab assignment.</p>
+            <p>I spent the whole day visiting my mother and helping her.</p>
+            <p>Today was about links, which I already knew, so I didn't learn anything new. It wasn't a very productive
+                day, but I did pass my lab.</p>
+            <p>I'll make a note of the LVHA rule just in case.</p>
+            <h3>The LVHA Rule: CSS Pseudo-classes Order</h3>
+            <p>To ensure link styles work correctly and don't override each other, follow the LVHA mnemonic (often
+                remembered as "<b>Love Fears Hate Always</b>" or "<b>Lord Voldemort Has Arrived</b>"):</p>
+            <ol>
+                <li><code>:link</code> — Matches unvisited links.</li>
+                <li><code>:visited</code> — Matches links the user has already clicked.</li>
+                <li><code>:hover</code> — Triggered when the mouse pointer is over the link.</li>
+                <li><code>:active</code> — Triggered at the exact moment the link is being clicked.</li>
+            </ol>
+            <blockquote><b>Note:</b> <code>:focus</code> is usually placed right before or after <code>:hover</code> to
+                ensure keyboard
+                accessibility.</blockquote>
+            <p>That's all for today. I have no plans tomorrow, so I'll be able to study longer.</p>
         </section>
     </main>
 
