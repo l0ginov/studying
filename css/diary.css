@@ -7,6 +7,9 @@ body {
     /* Уберет эти "засечки" у букв, будет выглядеть как современное приложение */
     line-height: 1.6;
     /* Добавит воздуха между строками, читать станет в разы легче */
+    background-image: url("../img/fon.jpg");
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 .online {
@@ -261,7 +264,7 @@ code {
 }
 
 blockquote {
-  border-left: 4px solid gold;
+  border-left: 4px solid white;
   padding-left: 15px;
   font-style: italic;
   margin: 20px 0;
