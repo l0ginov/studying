@@ -275,13 +275,25 @@ blockquote {
     bottom: 20px;
     right: 20px;
     width: 300px;
+    max-width: 40%;
     padding: 10px;
-    border: black solid 5px;
+    border: black solid 3px;
     color: black;
     background-color: rgba(128, 128, 128, 0.212);
     z-index: 9999;
     background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
     background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 480px) {
+    .infobar {
+        width: 120px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.75rem;
+        border-width: 2px;
+    }
 }
 
 .infobar h2 {
