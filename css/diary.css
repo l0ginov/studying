@@ -297,6 +297,7 @@ blockquote {
     background-color: rgba(128, 128, 128, 0.342);
     border: black solid 1px;
     text-align: center;
+    padding: 10px;
 }
 
 .infobar li {
@@ -304,6 +305,7 @@ blockquote {
     background-color: rgba(128, 128, 128, 0.342);
     border: black solid 1px;
     text-align: center;
+    padding: 10px;
 }
 
 #grey {
@@ -329,4 +331,15 @@ blockquote {
     padding: 20px;
     border: 3px solid gold;
     border-radius: 10px;
+}
+
+dd {
+    border-left: 4px solid white;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+p, dd, li, blockquote {
+    padding-right: 340px;
 }

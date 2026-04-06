@@ -216,7 +216,8 @@
                     <path d="M 10 80 L 50 20 L 90 80 Q50 60 10 80 Z" stroke="black" fill="none" />
                 </svg>
                 <svg width="100" height="100" viewBox="0 0 100 100">
-                    <path d="M 20 40 L 20 80 L 80 80 L 80 40 L 20 40 M 15 45 L 50 10 L 85 45 " stroke="brown" fill="none" />
+                    <path d="M 20 40 L 20 80 L 80 80 L 80 40 L 20 40 M 15 45 L 50 10 L 85 45 " stroke="brown"
+                        fill="none" />
                 </svg>
                 <svg width="100" height="100" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="25" stroke="gray" fill="none" />
@@ -825,7 +826,8 @@
             <p>Today I learned some things and have already used them in the journal for you to see.</p>
             <p>Below, as always, I will write the terms and descriptions that I learned.</p>
             <h3>Mastering CSS Backgrounds</h3>
-            <p>To control how images behave behind the content, we use a set of specific properties. Here’s the breakdown:</p>
+            <p>To control how images behave behind the content, we use a set of specific properties. Here’s the
+                breakdown:</p>
             <ul>
                 <li>
                     <code>background-image</code> — The source of the image.
@@ -836,7 +838,9 @@
                 <li>
                     <code>background-repeat</code> — Determines if the image tiles (repeats).
                     <ul>
-                        <li><b>Options:</b> <code>repeat</code> (default), <code>no-repeat</code> (one single image), <code>repeat-x</code> (horizontal), <code>repeat-y</code> (vertical).</li>
+                        <li><b>Options:</b> <code>repeat</code> (default), <code>no-repeat</code> (one single image),
+                            <code>repeat-x</code> (horizontal), <code>repeat-y</code> (vertical).
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -850,54 +854,76 @@
                 <li>
                     <code>background-position</code> — Moves the image within the container.
                     <ul>
-                        <li><b>Values:</b> <code>center, top right, bottom left</code>, or exact pixels/percentages (e.g., <code>50% 50%</code>).</li>
+                        <li><b>Values:</b> <code>center, top right, bottom left</code>, or exact pixels/percentages
+                            (e.g., <code>50% 50%</code>).</li>
                     </ul>
                 </li>
                 <li>
                     <code>background-attachment</code> — Determines if the image scrolls with the page.
                     <ul>
                         <li><code>scroll</code>: Image moves with the content (default).</li>
-                        <li><code>fixed</code>: Image stays stuck in the background while content slides over it (creates a cool Parallax effect).</li>
+                        <li><code>fixed</code>: Image stays stuck in the background while content slides over it
+                            (creates a cool Parallax effect).</li>
                     </ul>
                 </li>
                 <li>
-                    <code>background</code> — The shorthand property to combine multiple background values into one line.
+                    <code>background</code> — The shorthand property to combine multiple background values into one
+                    line.
                     <ul>
                         <li><b>Syntax: </b><code>[color] [image] [repeat] [attachment] [position] / [size]</code>.</li>
-                        <li><b>Crucial Rule:</b> The <code>size</code> (e.g., <code>cover</code>) must come after <code>position</code> and be separated by a forward slash <code>/</code>.</li>
-                        <li><b>Benefit:</b> Saves space and keeps your CSS clean. If a value is missing, it resets to its default.</li>
+                        <li><b>Crucial Rule:</b> The <code>size</code> (e.g., <code>cover</code>) must come after
+                            <code>position</code> and be separated by a forward slash <code>/</code>.
+                        </li>
+                        <li><b>Benefit:</b> Saves space and keeps your CSS clean. If a value is missing, it resets to
+                            its default.</li>
                     </ul>
                 </li>
             </ul>
             <h3>CSS Gradients</h3>
-            <p>Gradients let you display smooth transitions between two or more specified colors. They are treated as images by CSS.</p>
+            <p>Gradients let you display smooth transitions between two or more specified colors. They are treated as
+                images by CSS.</p>
             <ul>
                 <li>
                     <code>linear-gradient</code> — Creates a transition along a straight line.
                     <ul>
                         <li><b>Syntax:</b> <code>linear-gradient(direction, color1, color2, ...)</code></li>
-                        <li><b>Direction:</b> Can be an angle (e.g., <code>45deg</code>) or a keywords (e.g., <code>to right</code>, <code>to bottom left</code>).</li>
-                        <li><b>Color-stops:</b> You can specify where each color starts/ends using percentages (e.g., <code>red 10%, blue 90%</code>).</li>
+                        <li><b>Direction:</b> Can be an angle (e.g., <code>45deg</code>) or a keywords (e.g.,
+                            <code>to right</code>, <code>to bottom left</code>).
+                        </li>
+                        <li><b>Color-stops:</b> You can specify where each color starts/ends using percentages (e.g.,
+                            <code>red 10%, blue 90%</code>).
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <code>radial-gradient</code> — Creates a transition that radiates from a central point (an elliptical or circular shape).
+                    <code>radial-gradient</code> — Creates a transition that radiates from a central point (an
+                    elliptical or circular shape).
                     <ul>
-                        <li><b>Syntax:</b> <code>radial-gradient(shape size at position, color1, color2, ...)</code></li>
+                        <li><b>Syntax:</b> <code>radial-gradient(shape size at position, color1, color2, ...)</code>
+                        </li>
                         <li><b>Shape:</b> <code>circle</code> or <code>ellipse</code> (default).</li>
-                        <li><b>Position:</b> Where the "center" of the gradient is (e.g., <code>at center</code>, <code>at top left</code>, or exact pixels).</li>
+                        <li><b>Position:</b> Where the "center" of the gradient is (e.g., <code>at center</code>,
+                            <code>at top left</code>, or exact pixels).
+                        </li>
                     </ul>
                 </li>
             </ul>
             <hr>
             <h3>Important Details:</h3>
             <ol>
-                <li><b>Multiple Colors:</b> You aren't limited to two colors. You can list as many as you want: <code>linear-gradient(to right, red, orange, yellow, green)</code>.</li>
-                <li><b>Performance:</b> Since gradients are generated by the browser, they don't require downloading an image file, making your site load much faster.</li>
-                <li><b>Background Property:</b> Gradients are set using the <code>background</code> or <code>background-image</code> property, not <code>background-color</code>.</li>
+                <li><b>Multiple Colors:</b> You aren't limited to two colors. You can list as many as you want:
+                    <code>linear-gradient(to right, red, orange, yellow, green)</code>.
+                </li>
+                <li><b>Performance:</b> Since gradients are generated by the browser, they don't require downloading an
+                    image file, making your site load much faster.</li>
+                <li><b>Background Property:</b> Gradients are set using the <code>background</code> or
+                    <code>background-image</code> property, not <code>background-color</code>.
+                </li>
             </ol>
-            <p>I covered quite a few attributes today, even though I only went through two pages. But I spent most of my time on using them effectively.</p>
-            <p>For example: today I made a background, fixed it, and finally created an aside, which now serves as an information table.</p>
+            <p>I covered quite a few attributes today, even though I only went through two pages. But I spent most of my
+                time on using them effectively.</p>
+            <p>For example: today I made a background, fixed it, and finally created an aside, which now serves as an
+                information table.</p>
         </section>
         <section class="online finishback">
             <h2 class="finish"><time datetime="2026-04-03">Date: 03.04.2026</time> <input type="checkbox" checked
@@ -908,7 +934,8 @@
             <p>These properties define the visual boundaries of an element and its shape.</p>
             <ul>
                 <li>
-                    <code>border</code> — Sets a visible frame around an element. It is part of the box model and takes up space.
+                    <code>border</code> — Sets a visible frame around an element. It is part of the box model and takes
+                    up space.
                     <ul>
                         <li><b>Syntax:</b> <code>border: [width] [style] [color];</code></li>
                         <li><b>Common Styles:</b></li>
@@ -921,7 +948,8 @@
                     </ul>
                 </li>
                 <li>
-                    <code>outline</code> — Draws a line outside the border edge. Unlike borders, outlines <b>do not take up space</b> and don't affect the layout.
+                    <code>outline</code> — Draws a line outside the border edge. Unlike borders, outlines <b>do not take
+                        up space</b> and don't affect the layout.
                     <ul>
                         <li><b>Syntax:</b> <code>outline: [width] [style] [color];</code></li>
                     </ul>
@@ -936,6 +964,61 @@
             <blockquote><b>UPD:</b> I just completed the course subtopic - Basic CSS!</blockquote>
             <p>In addition to the theory, I completed one lab assignment and a quiz.</p>
             <p>I think we can finish for today.</p>
+        </section>
+        <section class="offline">
+            <h2><time datetime="2026-04-04">Date: 04.04.2026</time> - <time datetime="2026-04-05">05.04.2026</time>
+                <input type="checkbox" class="status-checkbox" onclick="return false;">
+            </h2>
+            <p>Weekend</p>
+        </section>
+        <section class="online">
+            <h2 class="date"><time datatime="2026-04-06">Date: 06.04.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>Today I'm starting <b>a new topic</b> in the CSS course, <b>"Design."</b> It has only 23 steps, but I've
+                already
+                noticed that it's going to be very long because absolutely all of them are <b>theory.</b></p>
+            <p>No labs, no master classes. <b>Just theory.</b></p>
+            <p>Since this whole topic is going to be theoretical, I'll be writing down the information here. I think
+                I'll write a lot of things down here.</p>
+            <h3>Design Terms</h3>
+            <dl>
+                <dt>— <b>Layout</b></dt>
+                <dd>Layout is how the visual elements are arranged on a page or screen to communicate a message. These
+                    elements may include text, images, and white space. The layout is like the blueprint of a design.
+                    Designers must consider the placement, size, and hierarchy of each element.</dd>
+                <dt>— <b>Alignment</b></dt>
+                <dd>Alignment is how the elements are placed in relation to one another. Using alignment correctly is
+                    helpful for making the design look clean and organized. Designers create visual order by aligning
+                    elements along imaginary lines, edges, or a central point.</dd>
+                <dt>— <b>Composition</b></dt>
+                <dd>Composition is the art of arranging elements to create a harmonious design. It determines how
+                    elements like images, text, and shapes relate to each other and contribute to the design in an
+                    artistic way. While layout mostly focuses on the placement of the elements, composition also
+                    considers the artistic impact that this placement will have in the overall design.</dd>
+                <dt>— <b>Hierarchy</b></dt>
+                <dd>Hierarchy establishes the order of importance of the elements in a design. It's about making sure
+                    the most important information is noticed first. You can implement a visual hierarchy with size,
+                    color, contrast, alignment, white space, and even typography.</dd>
+                <dt>— <b>Contrast</b></dt>
+                <dd>Contrast is helpful for guiding user attention to what you want to emphasize. You can do this
+                    through variations in color, size, shape, texture, or any other visual characteristic. Strong
+                    contrast is also helpful for improving readability.</dd>
+                <dt>— <b>White Space</b></dt>
+                <dd>White Space, also known as "negative space", is the empty space in a design. It's the area
+                    surrounding the elements. You might be surprised to know that white space is not necessarily white.
+                    Actually, it can be space in any color or texture. Its purpose is to improve the readability and
+                    enhance the visual hierarchy of a design.</dd>
+            </dl>
+            <p>These are general design concepts that you will find very often, but you may also find design terms that
+                are more closely related to software development.</p>
+            <p>The user interface, also known as UI, is how humans interact with computers. A user interface includes
+                the visual and interactive elements that users can see on their screens, like icons, images, text,
+                menus, links, and buttons.</p>
+            <p>The user experience, also known as UX, is about how users feel when using a product or service. An
+                application with a well-designed user experience is intuitive, easy to use, efficient, accessible, and
+                enjoyable. The user interface plays a key role in making the user experience as easy and enjoyable as
+                possible, so they are very closely related.</p>
+            <p></p>
         </section>
     </main>
 
