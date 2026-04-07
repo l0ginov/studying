@@ -377,3 +377,8 @@ hr {
     background-color: rgba(128, 128, 128, 0.527);
     margin: 20px 0;
 }
+
+::selection {
+    background-color: #ffd700;
+    color: #1a1a1a;
+}
