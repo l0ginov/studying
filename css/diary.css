@@ -1,15 +1,11 @@
 body {
     background-color: #1a1a1a;
-    /* Чуть потемнее, чтобы был контраст */
     color: #e0e0e0;
-    /* Мягкий белый, чтобы глаза не резало */
     font-family: sans-serif;
-    /* Уберет эти "засечки" у букв, будет выглядеть как современное приложение */
     line-height: 1.6;
-    /* Добавит воздуха между строками, читать станет в разы легче */
     background-image: url("../img/fon.jpg");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: containщ;
 }
 
 .online {
