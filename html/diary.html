@@ -125,14 +125,14 @@
             <figure class="music">
                 <figcaption><strong>Now Playing: Armin van Buuren feat. Sharon Den Adel-In And Out Of
                         Love</strong></figcaption>
-                <audio controls loop>
+                <audio controls loop preload="metadata">
                     <source src="../music/music1.mp3" type="audio/mpeg">
                     <p>Unfortunately, your browser does not support audio.</p>
                 </audio>
             </figure>
             <figure class="video">
                 <figcaption><strong>What is the meaning of life?</strong></figcaption>
-                <video controls playsinline>
+                <video controls playsinline preload="metadata">
                     <source src="../video/video1.mp4" type="video/mp4">
                     <p>Unfortunately, your browser does not support video.</p>
                 </video>
@@ -200,7 +200,7 @@
                 </li>
                 <li><strong>Milestone Reached:</strong> Officially <strong>finished the "Basic HTML"</strong> course on
                     freeCodeCamp — <strong>137 of 137 lessons completed!</strong>
-                    <br> <img src="../img/finishone.png" alt="Proof that the basic HTML has been completed."
+                    <br> <img src="../img/finishone.png" loading="lazy" alt="Proof that the basic HTML has been completed."
                         width="400">
                 </li>
                 <li><strong>Next Step:</strong> Moving on to "Semantic HTML" (55 steps) to learn how to make my code
@@ -355,7 +355,7 @@
                 know, since I have completely completed the semantic section.</p>
             <article>
                 <p>I'll attach a screenshot now, where you can see that the "semantic html" is finished:</p>
-                <img src="../img/finish2.jpg" alt="screenshot where you can see that the 'semantic html' is finished"
+                <img src="../img/finish2.jpg" loading="lazy" alt="screenshot where you can see that the 'semantic html' is finished"
                     width="400">
             </article>
             <p>The next course is "Forms and Tables"</p>
@@ -527,7 +527,7 @@
                 <strong>passed</strong> my first "certification project"
             </p>
             <p>I'm attaching a screenshot:</p>
-            <img src="../img/finish3.jpg" alt="screenshot where you can see that the 'Forms and Tables' is finished"
+            <img src="../img/finish3.jpg" loading="lazy" alt="screenshot where you can see that the 'Forms and Tables' is finished"
                 width="400">
             <p>The next course is "Accessibility"</p>
         </section>
@@ -619,7 +619,7 @@
                 </li>
             </ol>
             <p>Below I've attached a screenshot showing that the HTML course has been successfully completed:</p>
-            <img src="../img/finishglobal.jpg"
+            <img src="../img/finishglobal.jpg " loading="lazy"
                 alt="screenshot where you can see that the html course has been completed" width="400">
             <p>The next course is "Computers"</p>
         </section>
@@ -631,7 +631,7 @@
                 things. Otherwise, it's a pretty <strong>boring</strong> course that teaches the basics that many people
                 know today.</p>
             <p>I will attach my progress so far below:</p>
-            <img src="../img/finish4.jpg"
+            <img src="../img/finish4.jpg" loading="lazy"
                 alt="screenshot where you can see that the computers course has been completed" width="400">
             <p>That's not all for today, so I will continue to add information.</p>
             <p><strong>I'm now officially starting to dive into CSS.</strong></p>
@@ -1141,6 +1141,18 @@
             <h4><b>Lazy Loading</b></h4>
             <p>A technique that delays the loading of images or non-critical resources until they are actually needed
                 (when they appear in the viewport). This improves initial page load speed significantly.</p>
+            <hr>
+            <p>I also learned how to optimize media for better performance:</p>
+            <ul>
+                <li><b>loading="lazy":</b> For images. It delays loading until the user scrolls to them.</li>
+                <li><b>preload="none/metadata":</b> For audio and video. It prevents the browser from downloading huge
+                    files automatically, making the site much faster.</li>
+            </ul>
+            <p>This not only makes the site fly but also indirectly helps with <b>SEO</b> because search engines love
+                fast-loading pages.</p>
+            <hr>
+            <p>I think we can finish for today, tomorrow I’ll try to finish the topic completely and start a new one,
+                which includes lab work.</p>
         </section>
     </main>
 
