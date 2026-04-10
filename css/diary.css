@@ -337,7 +337,14 @@ dd {
 }
 
 p, dd, li, blockquote {
-    padding-right: 340px;
+    padding-right: 20px;
+}
+
+
+@media (min-width: 1024px) {
+    p, dd, li, blockquote {
+        padding-right: 340px;
+    }
 }
 
 h3 {
