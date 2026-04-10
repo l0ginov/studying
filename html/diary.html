@@ -1181,6 +1181,47 @@
             </ul>
             <hr>
             <p>As for me, the result is decent, and I am quite happy with it.</p>
+            <hr>
+            <h3>Native Modals: The &lt;dialog&gt; Tag</h3>
+            <p><b>Definition:</b> A native HTML element used to create popup menus and modal windows without complex
+                JavaScript or CSS workarounds.</p>
+            <ul>
+                <li><b>Key Methods:</b> <code>show()</code> for non-modal popups and <code>showModal()</code> for true
+                    modal windows (blocks interaction with the rest of the page).</li>
+                <li><b>Backdrop:</b> It comes with a <code>::backdrop</code> pseudo-element, allowing easy background
+                    styling (e.g., blurring or darkening the background).</li>
+                <li><b>Accessibility:</b> Automatically handles focus and closes on the <b>Esc</b> key.</li>
+            </ul>
+            <hr>
+            <h3>Progressive Disclosure</h3>
+            <p><b>Definition:</b> An interaction design pattern that sequences information and actions across several
+                screens
+                to reduce visual clutter and cognitive load.</p>
+            <h4><b>Why use it?</b></h4>
+            <ul>
+                <li><b>Simplicity:</b> Shows only the most important data first.</li>
+                <li><b>Focus:</b> Keeps the user from being overwhelmed by too many choices or too much text.</li>
+                <li><b>Efficiency:</b> Secondary information is hidden but remains easily accessible (e.g., "Read more"
+                    buttons
+                    or dropdowns).</li>
+            </ul>
+            <h4><b>Common Tools:</b></h4>
+            <p>The HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags are the simplest way to
+                implement this natively.</p>
+            <h4><b>Example:</b></h4>
+            <details>
+                <summary><b>Click to see how to do this</b></summary>
+                <pre><code>&lt;details&gt;</code>
+    <code>&lt;summary&gt;Click to see my Lighthouse stats&lt;/summary&gt;</code>
+        <code>&lt;ul&gt;</code>
+             <code>&lt;li&gt;Performance: 99%&lt;/li&gt;</code>
+            <code>&lt;li&gt;SEO: 100%&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+<code>&lt;/details&gt;</code></pre>
+            </details>
+            <hr>
+            <p>I'll finish for today. I might study some more over the weekend, as I'd like to move on to a new topic
+                with labs as soon as possible.</p>
         </section>
     </main>
 
