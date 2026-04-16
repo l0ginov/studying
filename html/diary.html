@@ -1398,13 +1398,112 @@
             <h4><b>Best Practices:</b></h4>
             <ul>
                 <li><b>Zero Units:</b> Unlike regular CSS, inside <code>calc()</code> even a 0 must have a unit (e.g.,
-                    <code>0px</code>).</li>
+                    <code>0px</code>).
+                </li>
                 <li><b>Multiplication/Division:</b> At least one operand must be a unitless number (e.g.,
-                    <code>calc(10px * 2)</code>).</li>
+                    <code>calc(10px * 2)</code>).
+                </li>
             </ul>
             <hr>
             <p>Still, I was able to finish this topic in one day.</p>
             <p>Next topic: Pseudo Classes and Elements. I'll start studying it tomorrow.</p>
+        </section>
+        <section class="online">
+            <h2 class="date"><time datetime="2026-04-16">Date: 16.04.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>Today I have a new topic</p>
+            <h3><b>CSS Pseudo-classes</b></h3>
+            <p><b>Definition:</b> Special keywords added to selectors that allow styling elements based on their
+                specific state or structural position within a parent element.</p>
+            <ul>
+                <li><b>User Interaction:</b>
+                    <ul>
+                        <li><code>:hover</code> — Triggered when the user mouses over an element.</li>
+                        <li><code>:active</code> — Applied while an element (like a button) is being clicked.</li>
+                        <li><code>:focus</code> — Applied when an element is selected (e.g., via keyboard or clicking an
+                            input).</li>
+                    </ul>
+                </li>
+                <li><b>Structural Selection:</b>
+                    <ul>
+                        <li><code>:first-child</code> — Selects an element if it is the very first child of its parent.
+                        </li>
+                        <li><code>:last-child</code> — Selects an element if it is the very last child of its parent.
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Link & Form States:</b>
+                    <ul>
+                        <li><code>:visited</code> — Styles links that have already been clicked by the user.</li>
+                        <li><code>:disabled</code> — Styles interactive elements (inputs, buttons) that are set to a
+                            disabled state.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><b>Best Practices:</b></h4>
+            <ul>
+                <li><b>Visual Feedback:</b> Use pseudo-classes like <code>:hover</code> to provide immediate feedback to
+                    the user, making the UI feel "alive".</li>
+                <li><b>Accessibility:</b> Always ensure <code>:focus</code> states are clearly visible for users who
+                    navigate via keyboard.</li>
+            </ul>
+            <hr>
+            <h3><b>Action & State Pseudo-classes</b></h3>
+            <p><b>Definition:</b> Advanced pseudo-classes used to style elements based on focus flow, form availability,
+                and URL navigation.</p>
+            <ul>
+                <li><b>:focus-within:</b> Applies styles to a parent element if any of its children receive focus. Great
+                    for highlighting entire forms.</li>
+                <li><b>:enabled / :disabled:</b> Specifically targets form elements based on whether they are
+                    interactive or locked.</li>
+                <li><b>:target:</b> Styles an element that matches the current URL fragment (e.g., the specific section
+                    linked via an ID like #about).</li>
+            </ul>
+            <h4><b>Key Takeaway:</b></h4>
+            <ul>
+                <li><b>User Guidance:</b> Use <code>:focus-within</code> to improve form usability and
+                    <code>:target</code> to create smooth visual cues when navigating via anchor links.
+                </li>
+            </ul>
+            <hr>
+            <h3><b>Input Pseudo-classes</b></h3>
+            <p><b>Definition:</b> Specific pseudo-classes used to enhance user experience by styling form elements based
+                on interaction, validation, and requirements.</p>
+            <ul>
+                <li><b>Interaction:</b>
+                    <ul>
+                        <li><code>:focus</code> — Highlights the active field where the user is currently typing.</li>
+                        <li><code>:hover</code> — Provides visual feedback when the cursor is over an input.</li>
+                        <li><code>:checked</code> — Styles selected radio buttons or checkboxes.</li>
+                    </ul>
+                </li>
+                <li><b>Validation:</b>
+                    <ul>
+                        <li><code>:required / :optional</code> — Targets fields based on whether they must be filled to
+                            submit the form.</li>
+                        <li><code>:valid / :invalid</code> — Styles inputs based on whether they meet the validation
+                            rules (e.g., correct email format).</li>
+                        <li><code>:in-range / :out-of-range</code> — Used for number inputs to check if the value is
+                            within the specified min/max limits.</li>
+                    </ul>
+                </li>
+                <li><b>System & State:</b>
+                    <ul>
+                        <li><code>:disabled</code> — Styles elements that cannot be interacted with, often using
+                            <code>cursor: not-allowed</code>.</li>
+                        <li><code>:autofill</code> — Targets fields that were automatically filled by the browser's
+                            saved data.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><b>Best Practices:</b></h4>
+            <ul>
+                <li><b>Visual Cues:</b> Use <code>:invalid</code> sparingly—it's often better to show the error after
+                    the user finishes typing rather than immediately.</li>
+                <li><b>Clarity:</b> Always use <code>cursor: not-allowed</code> for disabled elements to clearly signal
+                    that they are non-interactive.</li>
+            </ul>
+            <hr>
         </section>
     </main>
 
