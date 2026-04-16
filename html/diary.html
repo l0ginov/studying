@@ -1490,7 +1490,8 @@
                 <li><b>System & State:</b>
                     <ul>
                         <li><code>:disabled</code> — Styles elements that cannot be interacted with, often using
-                            <code>cursor: not-allowed</code>.</li>
+                            <code>cursor: not-allowed</code>.
+                        </li>
                         <li><code>:autofill</code> — Targets fields that were automatically filled by the browser's
                             saved data.</li>
                     </ul>
@@ -1502,6 +1503,37 @@
                     the user finishes typing rather than immediately.</li>
                 <li><b>Clarity:</b> Always use <code>cursor: not-allowed</code> for disabled elements to clearly signal
                     that they are non-interactive.</li>
+            </ul>
+            <hr>
+            <h3><b>Location Pseudo-classes</b></h3>
+            <p><b>Definition:</b> Selectors that target links and elements based on their relationship with the current
+                document or the user's browsing history.</p>
+            <ul>
+                <li><b>Link States:</b>
+                    <ul>
+                        <li><code>:link</code> — Selects all anchor elements (<code>&lt;a&gt;</code>) that have not been
+                            visited yet.</li>
+                        <li><code>:visited</code> — Selects links the user has already clicked. For privacy reasons,
+                            browsers limit the styles you can change here (mostly just color).</li>
+                        <li><code>:any-link</code> — A convenient shorthand that targets any element that would match
+                            either <code>:link</code> or <code>:visited</code>.</li>
+                    </ul>
+                </li>
+                <li><b>Navigation & Fragments:</b>
+                    <ul>
+                        <li><code>:target</code> — Styles a specific element when its ID matches the hash in the URL
+                            (e.g., highlighting a section when jumping to it via <code>#section1</code>).</li>
+                        <li><code>:local-link</code> — Designed to style links pointing to the same document (internal
+                            links), though currently lacking browser support.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><b>Key Takeaway:</b></h4>
+            <ul>
+                <li><b>Navigation Clarity:</b> Using <code>:target</code> is a great "no-JS" way to highlight the active
+                    section of a long page, helping users stay oriented.</li>
+                <li><b>Visual History:</b> Always style <code>:visited</code> slightly differently to help users
+                    remember which pages they've already read.</li>
             </ul>
             <hr>
         </section>
