@@ -1537,6 +1537,124 @@
             </ul>
             <hr>
         </section>
+        <section class="online">
+            <h2 class="date"><time datetime="2026-04-17">Date: 17.04.2026</time> <input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>So, we continue learning pseudo-classes.</p>
+            <h3><b>Tree-structural Pseudo-classes</b></h3>
+            <p><b>Definition:</b> Selectors that target elements based on their precise location or relationship within
+                the HTML document tree (DOM).</p>
+            <ul>
+                <li><b>Root & Content:</b>
+                    <ul>
+                        <li><code>:root</code> — Matches the highest-level parent (usually <code>&lt;html&gt;</code>).
+                            Primarily used for defining global CSS variables.</li>
+                        <li><code>:empty</code> — Targets elements that have no children at all (not even text nodes),
+                            useful for hiding broken or empty list items.</li>
+                    </ul>
+                </li>
+                <li><b>Position-based (Counting):</b>
+                    <ul>
+                        <li><code>:nth-child(n) / :nth-last-child(n)</code> — Selects elements by their index from the
+                            start or end. Supports numbers, <code>odd</code>, <code>even</code>, or formulas like
+                            <code>2n+1</code>.
+                        </li>
+                        <li><code>:only-child</code> — Selects an element only if it is the unique child of its parent.
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Type-specific:</b>
+                    <ul>
+                        <li><code>:first-of-type / :last-of-type</code> — Selects the first or last instance of a
+                            specific tag among its siblings.</li>
+                        <li><code>:nth-of-type(n)</code> — Similar to nth-child, but only counts elements of the same
+                            type (e.g., only <code>&lt;p&gt;</code> tags).</li>
+                        <li><code>:only-of-type</code> — Selects an element if it's the only one of its kind inside the
+                            parent, even if other different tags are present.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><b>Best Practices:</b></h4>
+            <ul>
+                <li><b>Precision:</b> Use <code>:nth-of-type</code> instead of <code>:nth-child</code> if your container
+                    has mixed tags (like h1, h2, and p) to avoid selecting the wrong element.</li>
+                <li><b>Clean UI:</b> Use <code>:empty { display: none; }</code> to automatically clean up your layout
+                    from empty generated elements.</li>
+            </ul>
+            <hr>
+            <h3><b>Functional Pseudo-classes</b></h3>
+            <p><b>Definition:</b> Advanced selectors that accept arguments (selectors) inside parentheses to perform
+                complex matching and logic.</p>
+            <ul>
+                <li><b>Grouping & Logic:</b>
+                    <ul>
+                        <li><code>:is(s1, s2)</code> — Reduces repetition by grouping multiple selectors into one. The
+                            specificity is determined by its most specific argument.</li>
+                        <li><code>:where(s1, s2)</code> — Identical to <code>:is()</code>, but always has <b>zero
+                                specificity</b>, making it easy to override later.</li>
+                        <li><code>:not(selector)</code> — Selects elements that do <b>not</b> match the argument.
+                            Perfect for excluding specific items from a general style.</li>
+                    </ul>
+                </li>
+                <li><b>The "Parent" Selector:</b>
+                    <ul>
+                        <li><code>:has(selector)</code> — Targets an element if it contains at least one descendant
+                            matching the argument. It allows styling parents based on their children's existence or
+                            state.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><b>Best Practices:</b></h4>
+            <ul>
+                <li><b>Code Cleanliness:</b> Use <code>:is()</code> to keep your stylesheets DRY (Don't Repeat
+                    Yourself).</li>
+                <li><b>Layout Control:</b> Use <code>:has()</code> to change a card's layout only when it contains an
+                    image or a specific icon, avoiding unnecessary class toggling in JS.</li>
+            </ul>
+            <hr>
+            <h3><b>CSS Pseudo-elements</b></h3>
+            <p><b>Definition:</b> Virtual elements used to style specific parts of an element or insert "synthetic"
+                content without modifying the actual HTML structure.</p>
+            <ul>
+                <li><b>Content Insertion:</b>
+                    <ul>
+                        <li><code>::before</code> — Inserts content at the very beginning of the element's content.</li>
+                        <li><code>::after</code> — Inserts content at the very end of the element's content.</li>
+                        <li><i>Note:</i> Both require the <code>content</code> property to function.</li>
+                    </ul>
+                </li>
+                <li><b>Text & UI Styling:</b>
+                    <ul>
+                        <li><code>::first-letter</code> — Targets the first character of a block-level element (e.g.,
+                            for drop caps).</li>
+                        <li><code>::marker</code> — Styles the bullet points of list items (<code>&lt;li&gt;</code>) or
+                            summary elements.</li>
+                        <li><code>::selection</code> — Styles the portion of the document that has been
+                            highlighted/selected by the user.</li>
+                        <li><code>::placeholder</code> — Targets the hint text inside <code>&lt;input&gt;</code> and
+                            <code>&lt;textarea&gt;</code> elements.</li>
+                    </ul>
+                </li>
+                <li><b>Advanced Hooks:</b>
+                    <ul>
+                        <li><code>::first-line</code> — Styles only the first line of text in an element.</li>
+                        <li><code>::spelling-error</code> — Allows customization of the visual indicator for misspelled
+                            words.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><b>Best Practices:</b></h4>
+            <ul>
+                <li><b>Syntax:</b> Always use the double colon (<code>::</code>) to distinguish pseudo-elements from
+                    pseudo-classes (like <code>:hover</code>).</li>
+                <li><b>Decorative Use:</b> Keep <code>::before</code> and <code>::after</code> for decorative purposes
+                    (icons, quotes). Crucial information should remain in the HTML for accessibility.</li>
+                <li><b>Brand Identity:</b> Customizing <code>::selection</code> and <code>::placeholder</code> to match
+                    your brand colors makes the UI feel much more polished.</li>
+            </ul>
+            <hr>
+            <p>I've finished all the theory in this topic, only the lab work remains. It's getting late now, so I'll do that next time, as I want to do it all in one go rather than spread it out over a couple of days.</p>
+        </section>
     </main>
 
     <footer>
