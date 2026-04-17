@@ -197,7 +197,19 @@ h1 {
 }
 
 h2.date {
-    color: #00ff88
+    color: #00ff88;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.date::before {
+    content: "🕒";
+    margin-right: 5px;
+    font-size: 1.3rem;
 }
 
 .finishback {
