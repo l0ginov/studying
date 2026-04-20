@@ -44,6 +44,16 @@ h2 {
     /* Чтобы блоки не слипались */
 }
 
+.offdate {
+    color:#49515a;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
 
 .music,
 .video {
@@ -212,6 +222,24 @@ h2.date {
     font-size: 1.3rem;
 }
 
+.offdate::before {
+    content: "🕒";
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.finish::before {
+    content: "🕒";
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.finishdateglobal::before {
+    content: "🕒";
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
 .finishback {
     background-color: rgba(255, 215, 0, 0.05);
     /* Еле заметный золотистый оттенок */
@@ -227,6 +255,12 @@ h2.date {
 
 .finish {
     color: #ffd700;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
 
 .finishback ul {
@@ -248,6 +282,12 @@ h2.date {
 
 .finishdateglobal {
     color: #d60000;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
 
 ul {
