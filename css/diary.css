@@ -216,25 +216,7 @@ h2.date {
     border-radius: 20px;
 }
 
-.date::before {
-    content: "🕒";
-    margin-right: 5px;
-    font-size: 1.3rem;
-}
-
-.offdate::before {
-    content: "🕒";
-    margin-right: 5px;
-    font-size: 1.3rem;
-}
-
-.finish::before {
-    content: "🕒";
-    margin-right: 5px;
-    font-size: 1.3rem;
-}
-
-.finishdateglobal::before {
+.date::before, .offdate::before, .finish::before, .finishdateglobal::before {
     content: "🕒";
     margin-right: 5px;
     font-size: 1.3rem;
