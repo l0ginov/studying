@@ -6,6 +6,8 @@ body {
     background-image: url("../img/fon.jpg");
     background-attachment: fixed;
     background-size: contain;
+    margin: 0;
+    padding: 0;
 }
 
 .online {
