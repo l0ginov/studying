@@ -12,38 +12,29 @@ body {
 
 .online {
     background-color: rgba(0, 255, 136, 0.03);
-    /* Еле заметный зеленый оттенок фона */
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #00ff88;
-    /* Оставляем полоску слева, но яркую */
     color: #00ff88;
     margin-bottom: 20px;
     border-bottom: 2px solid rgba(128, 128, 128, 0.288);
     border-top: 2px solid rgba(128, 128, 128, 0.288);
 }
 
-/* Маленький бонус: сделаем заголовки покрасивее */
 h2 {
     color: #55aaff;
-    /* Голубой цвет для дат */
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
 }
 
 .offline {
     background-color: #25222275;
-    /* Чуть светлее фона, но темнее активных блоков */
     padding: 15px;
     border-radius: 8px;
     opacity: 0.5;
-    /* Сделаем еще чуть прозрачнее */
     border-left: 4px solid #444;
-    /* Добавим серую полоску сбоку, как в цитатах */
     filter: grayscale(80%);
-    /* Если там будут иконки или цвета, они станут почти ч/б */
     margin-bottom: 20px;
-    /* Чтобы блоки не слипались */
 }
 
 .offdate {
@@ -60,15 +51,11 @@ h2 {
 .music,
 .video {
     background: rgba(255, 255, 255, 0.05);
-    /* Легкий прозрачный фон */
     padding: 15px;
     border-radius: 12px;
     border: 1px solid #444;
-    /* Тонкая рамка */
     width: fit-content;
-    /* Чтобы блок не растягивался на весь экран */
     margin: 20px 0;
-    /* Отступы сверху и снизу */
     text-align: center;
 }
 
@@ -82,29 +69,24 @@ h2 {
 audio {
     filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(100%);
     display: block;
-    /* Выбиваем его в отдельную строку, чтобы он мог расширяться */
     width: 400px;
-    /* Попробуй задать фиксированную ширину в пикселях для теста */
     margin: 0 auto;
-    /* Центрируем его внутри карточки */
 }
 
-/* Объединяем видео и айфреймы в одну стильную группу */
 video, iframe {
     max-width: 100%;
-    height: auto; /* Важно для адаптивности айфрейма! */
-    aspect-ratio: 16 / 9; /* Сохраняем пропорции видео, чтобы не было черных полос */
+    height: auto;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     outline: none;
     background-color: #000;
     display: block;
-    margin: 20px 0; /* Центрируем и даем отступы сверху-снизу */
-    border: none; /* Убираем дефолтную рамку у айфрейма */
+    margin: 20px 0;
+    border: none;
     
 }
 
-/* Базовый стиль для всех твоих статус-чекбоксов */
 .status-checkbox {
   appearance: none;
   -webkit-appearance: none;
@@ -112,20 +94,18 @@ video, iframe {
   height: 20px;
   border: 2px solid #555;
   border-radius: 4px;
-  background-color: #ff4d4d; /* Стандартно - КРАСНЫЙ */
+  background-color: #ff4d4d;
   display: inline-block;
   position: relative;
   cursor: not-allowed;
   vertical-align: middle;
 }
 
-/* Стиль, когда галочка СТОИТ (Checked) */
 .status-checkbox:checked {
-  background-color: #2ecc71; /* ЗЕЛЕНЫЙ */
+  background-color: #2ecc71;
   border-color: #27ae60;
 }
 
-/* Рисуем белую галочку внутри зеленого квадрата */
 .status-checkbox:checked::after {
   content: '✔';
   position: absolute;
@@ -135,22 +115,18 @@ video, iframe {
   top: -1px;
 }
 
-
-
-/* 1. Лечим аудио-плеер */
 audio {
-    width: 100%;       /* Растягиваем на всю ширину родителя */
-    max-width: 400px;  /* Но не даем ему стать слишком огромным на планшетах */
+    width: 100%;
+    max-width: 400px;
     display: block;
     margin: 15px 0;
 }
 
-/* 2. Лечим все картинки (фотографии) */
 img {
-    max-width: 100%;   /* Фото никогда не будет шире экрана */
-    height: auto;      /* Сохраняем пропорции, чтобы лица не сплющило */
-    display: block;    /* Убираем лишние отступы снизу */
-    border-radius: 8px; /* Раз уж у нас везде скругления, добавим и фоткам */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
     margin: 15px 0;
 }
 
@@ -226,13 +202,8 @@ h2.date {
 
 .finishback {
     background-color: rgba(255, 215, 0, 0.05);
-    /* Еле заметный золотистый оттенок */
     border-left: 4px solid #ffd700;
-    /* Яркая золотая полоска слева */
     color: #ffd700;
-    /* Золотой текст */
-
-    /* Добавим капельку магии, чтобы выделить финиш */
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
     position: relative;
 }
@@ -253,13 +224,8 @@ h2.date {
 
 .finishglobal {
     background-color: rgba(107, 0, 0, 0.05);
-    /* Еле заметный золотистый оттенок */
     border-left: 4px solid #d60000;
-    /* Яркая золотая полоска слева */
     color: #d60000;
-    /* Золотой текст */
-
-    /* Добавим капельку магии, чтобы выделить финиш */
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
     position: relative;
 }
