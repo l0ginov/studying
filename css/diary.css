@@ -21,12 +21,6 @@ body {
     border-top: 2px solid rgba(128, 128, 128, 0.288);
 }
 
-h2 {
-    color: #55aaff;
-    border-bottom: 1px solid #333;
-    padding-bottom: 5px;
-}
-
 .offline {
     background-color: #25222275;
     padding: 15px;
@@ -38,7 +32,7 @@ h2 {
 }
 
 .offdate {
-    color:#49515a;
+    color: #49515a;
     background-color: rgba(0, 0, 0, 0.452);
     display: inline-block;
     padding: 10px;
@@ -73,7 +67,8 @@ audio {
     margin: 0 auto;
 }
 
-video, iframe {
+video,
+iframe {
     max-width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
@@ -84,35 +79,43 @@ video, iframe {
     display: block;
     margin: 20px 0;
     border: none;
-    
+
 }
 
 .status-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #555;
-  border-radius: 4px;
-  background-color: #ff4d4d;
-  display: inline-block;
-  position: relative;
-  cursor: not-allowed;
-  vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    background-color: #ff4d4d;
+    display: inline-block;
+    position: relative;
+    cursor: not-allowed;
+    vertical-align: middle;
 }
 
 .status-checkbox:checked {
-  background-color: #2ecc71;
-  border-color: #27ae60;
+    background-color: #2ecc71;
+    border-color: #27ae60;
 }
 
 .status-checkbox:checked::after {
-  content: '✔';
-  position: absolute;
-  color: white;
-  font-size: 14px;
-  left: 3px;
-  top: -1px;
+    content: '✔';
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    left: 2px;
+    top: -1px;
+}
+
+.status-checkbox::after {
+    content: "✖";
+    position: absolute;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    top: -6px;
 }
 
 audio {
@@ -155,10 +158,7 @@ a:hover {
     color: purple;
 }
 
-a:focus {
-    color: red;
-}
-
+a:focus,
 a:active {
     color: red;
 }
@@ -194,8 +194,26 @@ h2.date {
     border-radius: 20px;
 }
 
-.date::before, .offdate::before, .finish::before, .finishdateglobal::before {
-    content: "🕒";
+.date::before {
+    content: "\231A ";
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.finish::before {
+    content: "\1F31F ";
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.offdate::before {
+    content: "\1F4A4 ";
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.finishdateglobal::before {
+    content: "\1F4AF ";
     margin-right: 5px;
     font-size: 1.3rem;
 }
@@ -216,10 +234,6 @@ h2.date {
     margin: 10px;
     border: 1px solid grey;
     border-radius: 20px;
-}
-
-.finishback ul {
-    list-style-type: disc;
 }
 
 .finishglobal {
@@ -263,10 +277,10 @@ code {
 }
 
 blockquote {
-  border-left: 4px solid white;
-  padding-left: 15px;
-  font-style: italic;
-  margin: 20px 0;
+    border-left: 4px solid white;
+    padding-left: 15px;
+    font-style: italic;
+    margin: 20px 0;
 }
 
 .infobar {
@@ -339,13 +353,20 @@ dd {
     margin: 10px;
 }
 
-p, dd, li, blockquote {
+p,
+dd,
+li,
+blockquote {
     padding-right: 20px;
 }
 
 
 @media (min-width: 1024px) {
-    p, dd, li, blockquote {
+
+    p,
+    dd,
+    li,
+    blockquote {
         padding-right: 340px;
     }
 }
@@ -373,6 +394,7 @@ h3 code {
 dt {
     font-weight: bold;
 }
+
 dt::before {
     content: "— ";
 }
@@ -391,4 +413,8 @@ hr {
 
 li {
     line-height: 30px;
+}
+
+section {
+    margin-left: 10px;
 }
