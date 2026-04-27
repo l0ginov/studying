@@ -1703,6 +1703,232 @@
             <p>Today I started a new topic "Colors"</p>
             <p>If there is something interesting in theory, I will write it here, but for now there is nothing here that
                 would be worth writing down directly here.</p>
+            <h3><b>Color Theory in Design</b></h3>
+            <p><b>Definition:</b> The study of how colors interact, affect human perception, and how they can be
+                organized into harmonious schemes for effective visual communication.</p>
+            <dl>
+                <dt><b>Color Classification:</b></dt>
+                <dd>
+                    <ul>
+                        <li><b>Primary Colors:</b> Red, Yellow, Blue. The base hues that cannot be created by mixing
+                            other colors.</li>
+                        <li><b>Secondary Colors:</b> Green, Orange, Purple. Created by mixing two primary colors.</li>
+                        <li><b>Tertiary Colors:</b> Created by mixing a primary color with a neighboring secondary color
+                            (e.g., Blue-Green).</li>
+                    </ul>
+                </dd>
+                <dt><b>Temperature & Psychology:</b></dt>
+                <dd>
+                    <ul>
+                        <li><code>Warm Colors</code> (Red, Orange, Yellow) — Evoke comfort, energy, and warmth.</li>
+                        <li><code>Cool Colors</code> (Blue, Green, Purple) — Evoke serenity, professionalism, and
+                            calmness.</li>
+                    </ul>
+                </dd>
+                <dt><b>Color Schemes (Harmony):</b></dt>
+                <dd>
+                    <ul>
+                        <li><b>Monochromatic:</b> Different shades and tints of a single base color. High unity.</li>
+                        <li><b>Analogous:</b> Colors located next to each other on the color wheel. Cohesive and
+                            soothing.</li>
+                        <li><b>Complementary:</b> Colors opposite each other on the wheel. High contrast and impact.
+                        </li>
+                        <li><b>Triadic:</b> Three colors equidistant on the wheel. Vibrant and balanced.</li>
+                    </ul>
+                </dd>
+
+                <dt><b>Web Accessibility:</b></dt>
+                <dd>
+                    <p>Color contrast is vital for users with visual impairments. Text must be clearly distinguishable
+                        from its background to ensure readability and inclusivity.</p>
+                </dd>
+            </dl>
+            <h4><b>Design Tips:</b></h4>
+            <ul>
+                <li><b>Brand Identity:</b> Create a scheme that aligns with the emotional goals of the project.</li>
+                <li><b>Visual Hierarchy:</b> Use bold or complementary colors to highlight key elements like
+                    <code>buttons</code>.
+                </li>
+                <li><b>Consistency:</b> Apply your color palette uniformly across the UI to create a polished,
+                    professional feel.</li>
+            </ul>
+            <hr>
+        </section>
+        <section class="offline">
+            <h2 class="offdate"><time datetime="2026-04-25">Date: 25.04.2026</time> - <time
+                    datetime="2026-04-26">26.04.2026</time>
+                <input type="checkbox" class="status-checkbox" onclick="return false;">
+            </h2>
+            <p>Weekend</p>
+        </section>
+        <section class="online">
+            <h2 class="date"><time datetime="2026-04-27">Date: 27.04.2026</time><input type="checkbox" checked
+                    class="status-checkbox" onclick="return false;"></h2>
+            <p>Today I continue the topic of "Colors"</p>
+            <h3><b>CSS Named Colors</b></h3>
+            <p><b>Definition:</b> A set of 140 predefined keywords (like <code>navy</code>, <code>coral</code>, or
+                <code>transparent</code>) that browsers recognize without numeric codes.
+            </p>
+            <dl>
+                <dt><b>When to use:</b></dt>
+                <dd>
+                    <ul>
+                        <li><b>Prototyping:</b> When you need to quickly test a layout and don't care about exact
+                            shades.</li>
+                        <li><b>Debugging:</b> Adding a <code>border: 2px solid red;</code> to see where a block
+                            ends.</li>
+                        <li><b>Code Readability:</b> For very basic colors where "black" is just "black".</li>
+                    </ul>
+                </dd>
+            </dl>
+            <p><i>Note:</i> For professional design, always prefer <b>HEX, RGB, or HSL</b> for precision and
+                consistency.</p>
+            <hr>
+            <h3><b>The RGB & RGBA Color Models</b></h3>
+            <p><b>Definition:</b> An additive color model where <b>Red, Green, and Blue</b> light are combined in
+                various intensities (from 0 to 255) to create a broad spectrum of colors.</p>
+            <dl>
+                <dt><b>How it works:</b></dt>
+                <dd>
+                    <ul>
+                        <li><code>rgb(0, 0, 0)</code> — <b>Black:</b> Total absence of light.</li>
+                        <li><code>rgb(255, 255, 255)</code> — <b>White:</b> Maximum intensity of all three colors.</li>
+                        <li><code>rgb(255, 0, 0)</code> — <b>Pure Red:</b> Full red, no green or blue.</li>
+                    </ul>
+                </dd>
+                <dt><b>The Alpha Channel (Transparency):</b></dt>
+                <dd>
+                    <p>The <code>rgba()</code> function adds a fourth value: <b>Alpha</b>. It controls opacity on a
+                        scale from <code>0</code> (transparent) to <code>1</code> (opaque).</p>
+                    <p><i>Example:</i> <code>rgba(0, 0, 255, 0.5)</code> creates a 50% transparent blue.</p>
+                </dd>
+            </dl>
+            <h4><b>Why use RGB/RGBA?</b></h4>
+            <ul>
+                <li><b>Pixel Precision:</b> Directly corresponds to how screen pixels function.</li>
+                <li><b>Layering:</b> Essential for backgrounds where you want the underlying content (like your
+                    background image) to peek through.</li>
+                <li><b>Dynamic Effects:</b> Ideal for CSS transitions and animations where you need to change color or
+                    opacity programmatically.</li>
+            </ul>
+            <p>RGB is the language of screens. Understanding the 0-255 scale gives full control over every pixel's hue
+                and transparency. Moving to hex codes next?</p>
+            <hr>
+            <h3><b>The HSL & HSLA Color Models</b></h3>
+            <p><b>Definition:</b> A human-friendly way to define colors based on <b>Hue</b> (the color itself),
+                <b>Saturation</b> (intensity), and <b>Lightness</b> (brightness).
+            </p>
+            <dl>
+                <dt><b>The Three Components:</b></dt>
+                <dd>
+                    <ul>
+                        <li><b>Hue:</b> Position on the color wheel from <code>0</code> to <code>360</code>.
+                            <ul>
+                                <li><code>0</code> — Red</li>
+                                <li><code>120</code> — Green</li>
+                                <li><code>240</code> — Blue</li>
+                            </ul>
+                        </li>
+                        <li><b>Saturation:</b> Measured from <code>0%</code> (completely desaturated, gray) to
+                            <code>100%</code> (vibrant color).
+                        </li>
+                        <li><b>Lightness:</b> Measured from <code>0%</code> (black) to <code>100%</code> (white). A
+                            value of <code>50%</code> represents the pure tone.</li>
+                    </ul>
+                </dd>
+                <dt><b>Transparency:</b></dt>
+                <dd>
+                    <p>The <code>hsla()</code> function adds an <b>Alpha</b> channel (<code>0</code> to <code>1</code>
+                        or <code>0%</code> to <code>100%</code>) to control opacity.</p>
+                    <p><i>Example:</i> <code>hsla(240, 100%, 50%, 0.5)</code> creates a semi-transparent blue.</p>
+                </dd>
+            </dl>
+            <h4><b>Best Practices & Why to Use HSL:</b></h4>
+            <ul>
+                <li><b>Intuitive Adjustments:</b> Changing shades or tints is simple—just modify the Lightness value
+                    without touching the Hue.</li>
+                <li><b>Consistent Themes:</b> Perfect for creating color palettes where you want different elements to
+                    share the same base color but different intensity.</li>
+                <li><b>Readability:</b> It is much easier to visualize <code>hsl(0, 100%, 50%)</code> than trying to
+                    decipher hex codes or RGB intensities.</li>
+            </ul>
+            <p>HSL makes color logic much more accessible for developers. It separates the "which color" from "how
+                bright". Hex codes are likely the final part of this series.</p>
+            <hr>
+            <h3><b>Hexadecimal Color Codes (HEX)</b></h3>
+            <p><b>Definition:</b> A concise way to represent the RGB color model using base-16 numbering (0-9 and A-F).
+                It consists of a hash symbol (<code>#</code>) followed by six characters.</p>
+            <dl>
+                <dt><b>Structure: <code>#RRGGBB</code></b></dt>
+                <dd>
+                    <ul>
+                        <li><b>RR (Red):</b> The first two characters.</li>
+                        <li><b>GG (Green):</b> The middle two characters.</li>
+                        <li><b>BB (Blue):</b> The last two characters.</li>
+                        <li><i>Values:</i> Range from <code>00</code> (none) to <code>FF</code> (maximum intensity).
+                        </li>
+                    </ul>
+                </dd>
+                <dt><b>Shorthand Syntax:</b></dt>
+                <dd>
+                    <p>If both characters in each pair are identical, the code can be shortened to three characters.</p>
+                    <ul>
+                        <li><code>#FFFFFF</code> becomes <code>#FFF</code> (White)</li>
+                        <li><code>#000000</code> becomes <code>#000</code> (Black)</li>
+                        <li><code>#AABBCC</code> becomes <code>#ABC</code></li>
+                    </ul>
+                </dd>
+            </dl>
+            <h4><b>Pros of using Hex Codes:</b></h4>
+            <ul>
+                <li><b>Industry Standard:</b> Most design tools (Figma, Adobe) provide Hex codes by default.</li>
+                <li><b>Precision:</b> Supports over 16 million possible color combinations.</li>
+                <li><b>Performance:</b> Browsers process hex codes slightly faster than functional notations like
+                    <code>hsl()</code> or <code>rgb()</code>.
+                </li>
+            </ul>
+            <p>Hex codes are the most common way to define colors in web development. They bridge the gap between design
+                software and CSS code. One more theory block to go?</p>
+            <hr>
+            <h3><b>CSS Gradients</b></h3>
+            <p><b>Definition:</b> Transitions between two or more colors. They are treated as images in CSS and are
+                primarily used for backgrounds.</p>
+            <dl>
+                <dt><b>1. Linear Gradients:</b></dt>
+                <dd>
+                    <p>Transitions along a straight line. You can define direction (e.g., <code>to right</code>,
+                        <code>to top left</code>) or angles (<code>45deg</code>).</p>
+                    <ul>
+                        <li><code>background: linear-gradient(direction, color1, color2, ...);</code></li>
+                    </ul>
+                </dd>
+                <dt><b>2. Radial Gradients:</b></dt>
+                <dd>
+                    <p>Radiate from a central point (circle or ellipse).</p>
+                    <ul>
+                        <li><code>background: radial-gradient(shape size at position, start-color, ..., last-color);</code>
+                        </li>
+                    </ul>
+                </dd>
+                <dt><b>Color Stops:</b></dt>
+                <dd>
+                    <p>You can control exactly where each color starts and ends using percentages.</p>
+                    <p><i>Example:</i> <code>linear-gradient(to right, red 20%, yellow 80%);</code></p>
+                </dd>
+            </dl>
+            <h4><b>Best Practices:</b></h4>
+            <ul>
+                <li><b>Accessibility:</b> Always check if text is readable over the gradient. If the gradient is
+                    complex, add a fallback solid color.</li>
+                <li><b>Performance:</b> Use CSS gradients instead of background images whenever possible to reduce page
+                    load time.</li>
+                <li><b>Tools:</b> Don't write complex gradients by hand. Use "CSS Gradient Generators" to get the exact
+                    code and copy-paste it.</li>
+            </ul>
+            <p>Gradients add depth without slowing down the site. Mastering color stops is key to creating polished UI
+                elements like buttons and cards.</p>
+            <hr>
+            <p>That's all the theory on this topic. From now on, there's just a master class and lab work.</p>
         </section>
     </main>
 
